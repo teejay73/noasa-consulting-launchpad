@@ -98,6 +98,9 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply font-inter bg-[#fafbfc] text-gray-900;
+  }
+  h1, h2, h3 {
+    @apply font-inter;
   }
 }

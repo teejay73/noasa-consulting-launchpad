@@ -61,7 +61,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Add custom font or accent color for "Faster."
+				fontFamily: {
+					inter: ['Inter', 'sans-serif'],
+					// playfair: ['Playfair Display', 'serif'], // uncomment if you want a serif option
+				},
+				// Add custom accent yellow (similar to screenshot's callout)
+				accentYellow: "#FFC72C",
+				// Add primary CTA blue (similar to screenshot)
+				accentBlue: "#2445E2",
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
