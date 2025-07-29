@@ -17,12 +17,12 @@ const Index = () => (
           <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
             {/* Main headline */}
             <h1 className="font-inter font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight mb-6 leading-tight text-gray-900">
-              Product & Strategy Consulting for Startups and Growth-Stage Companies
+              Product Consulting for Startups and Growth-Stage Companies
             </h1>
             
             {/* Subheadline */}
             <p className="text-xl md:text-2xl text-gray-600 font-normal mb-10 max-w-3xl leading-relaxed">
-              Helping teams build smarter, scale faster, and align around what matters—with experienced leadership from day one.
+              Helping teams build smarter, scale faster, and align around what matters—with experienced leadership from day one at a fraction of a cost.
             </p>
             
             {/* CTA button */}
@@ -41,26 +41,43 @@ const Index = () => (
         <FadeInSection delay={100}>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-center font-semibold text-3xl md:text-4xl mb-12 tracking-tight text-gray-900">
-              What We Offer Our Clients
+              From strategy to execution, we embed alongside teams to accelerate product, operations, and go-to-market success.
             </h2>
             
-            <div className="space-y-8 text-lg md:text-xl text-gray-700 leading-relaxed">
-              <p className="text-center">
-                Strategic support across product, operations, and go-to-market.
-              </p>
-              
+            <div className="space-y-12 text-lg text-gray-700 leading-relaxed">
+              {/* How We Work */}
               <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-                <p className="mb-6">
-                  Engagements are designed to plug into existing teams, bring clarity to roadmaps, and drive tangible results—whether launching a new product, accelerating GTM, or leveling up internal processes.
+                <h3 className="font-semibold text-xl text-gray-900 mb-4">How We Work</h3>
+                <p>
+                  We plug directly into your team to provide clarity, structure, and forward momentum. Whether we're acting as your CPO, Head of Product, or Product Lead, our approach is highly collaborative and outcome-driven. We help sharpen roadmaps, align stakeholders, and deliver tangible results—fast.
                 </p>
-                
-                <p className="mb-6">
-                  Built for founders, CEOs, and department leads who need outcomes, not overhead.
+              </div>
+              
+              {/* Who We Support */}
+              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                <h3 className="font-semibold text-xl text-gray-900 mb-4">Who We Support</h3>
+                <p>
+                  We work with founders, CEOs, and department leaders who are building, scaling, or transforming digital products. Whether you're in early-stage chaos or mid-growth complexity, we bring calm, clarity, and experience to your team when it matters most.
                 </p>
-                
-                <p className="font-medium text-gray-900">
-                  Available for ongoing consulting, fractional leadership, or fixed-scope projects.
-                </p>
+              </div>
+              
+              {/* How You Can Engage Us */}
+              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                <h3 className="font-semibold text-xl text-gray-900 mb-4">How You Can Engage Us</h3>
+                <div className="space-y-4">
+                  <div>
+                    <p className="font-medium text-gray-900">Ongoing Consulting</p>
+                    <p className="text-gray-600">Trusted advisory and executional support to senior leadership and product teams.</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-gray-900">Fractional Leadership</p>
+                    <p className="text-gray-600">Embedded roles like CPO, Head of Product, or Product Lead to fill critical gaps without full-time overhead.</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-gray-900">Fixed-Scope Projects</p>
+                    <p className="text-gray-600">Clear deliverables on a defined timeline, from product audits to GTM strategy to MVP execution.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -79,16 +96,13 @@ const Index = () => (
         </FadeInSection>
       </section>
 
-      {/* CAPABILITIES SECTION */}
+      {/* HIGH IMPACT SECTION */}
       <section className="w-full py-20 px-4 md:px-0">
         <FadeInSection delay={240}>
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-center font-semibold text-3xl md:text-4xl mb-4 tracking-tight text-gray-900">
-              Capabilities
+            <h2 className="text-center font-semibold text-3xl md:text-4xl mb-12 tracking-tight text-gray-900">
+              Where Noasa Consulting Makes a High Impact
             </h2>
-            <p className="text-center text-gray-600 mb-12 text-lg max-w-2xl mx-auto">
-              Comprehensive support across all aspects of product and business strategy
-            </p>
             <CapabilitiesGrid />
           </div>
         </FadeInSection>
@@ -100,7 +114,7 @@ const Index = () => (
           <div className="max-w-xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-gray-900">Let&apos;s Talk</h2>
             <div className="text-gray-700 mb-8 text-lg">
-              Ready to accelerate your growth and align your team around what matters most?
+              If you're facing complexity, scale, or messy growth—we should talk.
             </div>
             <a
               href="mailto:hello@yourdomain.com"
@@ -134,7 +148,7 @@ const Index = () => (
 
     {/* Footer */}
     <footer className="text-center py-8 text-gray-400 text-xs bg-transparent">
-      &copy; {new Date().getFullYear()} Noasa Consulting. All rights reserved.
+      &copy; 2025 Noasa Consulting. All rights reserved.
     </footer>
   </div>
 );

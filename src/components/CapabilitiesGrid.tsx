@@ -1,37 +1,57 @@
 
 import React from 'react';
-import { Target, Calendar, Rocket, Settings, Users, TrendingUp } from 'lucide-react';
+import { Users, Target, Rocket, Heart, BarChart3, TrendingUp, Building2, Brain, Presentation, Zap } from 'lucide-react';
 
 const capabilities = [
   {
-    title: "Fractional Head of Product / Product Strategy",
-    icon: Target,
-    description: "Strategic product leadership and vision setting"
-  },
-  {
-    title: "Roadmap Planning & Prioritization",
-    icon: Calendar,
-    description: "Clear roadmaps that align teams and drive results"
-  },
-  {
-    title: "MVP Scoping & Delivery",
-    icon: Rocket,
-    description: "From concept to launch with focused execution"
-  },
-  {
-    title: "Ops & Executional Support",
-    icon: Settings,
-    description: "Streamline processes and improve team efficiency"
-  },
-  {
-    title: "Cross-Functional Team Alignment",
+    title: "Fractional Product Leadership",
     icon: Users,
-    description: "Unite teams around shared goals and priorities"
+    description: "Embed senior-level product leadership into your team to drive clarity, focus, and results—without the overhead of a full-time hire."
   },
   {
-    title: "Go-To-Market Acceleration",
+    title: "Cross-Functional Team Orchestration",
+    icon: Target,
+    description: "Lead and align product, design, engineering, and business teams around shared goals with velocity and transparency."
+  },
+  {
+    title: "Zero-to-One Product Development",
+    icon: Rocket,
+    description: "Take early-stage concepts from idea to launch with structured, validated roadmaps and crisp execution—used by startups like StyleRow and BeClear."
+  },
+  {
+    title: "Customer-Centric Platform Design",
+    icon: Heart,
+    description: "Build product experiences around the real needs of users—improving retention, satisfaction, and business outcomes, as proven across B2B2C and enterprise SaaS platforms."
+  },
+  {
+    title: "Data-Informed Prioritization and Ops",
+    icon: BarChart3,
+    description: "Set up frameworks that move product and BI teams from siloed activity to business-aligned delivery—like at Real Defense's BI and Ecommerce functions."
+  },
+  {
+    title: "GTM and Monetization Strategy",
     icon: TrendingUp,
-    description: "Accelerate growth and market penetration"
+    description: "Translate product innovation into market traction and revenue through positioning, packaging, and cross-channel rollout planning."
+  },
+  {
+    title: "Enterprise Readiness & Scaling",
+    icon: Building2,
+    description: "Design scalable infrastructure and internal processes that support client onboarding, customer care, and high-growth environments—experience spanning Series A startups to $50MM+ ARR businesses."
+  },
+  {
+    title: "AI and Emerging Tech Integration",
+    icon: Brain,
+    description: "Shape and ship future-forward products—Web3 loyalty platforms, AI-powered coaching apps, or decentralized fan engagement tools—grounded in real commercial use cases."
+  },
+  {
+    title: "Executive-Level Communication & Strategy",
+    icon: Presentation,
+    description: "Craft and present compelling product strategies and business cases to boards, investors, and C-suites—securing funding and buy-in."
+  },
+  {
+    title: "Fast-Start Engagements That Deliver",
+    icon: Zap,
+    description: "Plug in quickly, find high-leverage opportunities, and start delivering value within the first week—ideal for fast-moving teams that need senior horsepower now."
   }
 ];
 
