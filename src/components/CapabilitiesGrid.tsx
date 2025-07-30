@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Users, Target, Rocket, Heart, BarChart3, TrendingUp, Building2, Brain, Presentation, Zap } from 'lucide-react';
 
 const capabilities = [
@@ -56,28 +56,51 @@ const capabilities = [
 ];
 
 const CapabilitiesGrid = () => {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {capabilities.map((capability, index) => {
         const IconComponent = capability.icon;
+        const isHovered = hoveredIndex === index;
+        
         return (
           <div
             key={index}
-            className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow"
+            className="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg hover:border-accentBlue/30 transition-all duration-300 cursor-pointer"
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
+            onClick={() => setHoveredIndex(isHovered ? null : index)} // For mobile
           >
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0 w-10 h-10 bg-accentBlue/10 rounded-lg flex items-center justify-center">
                 <IconComponent className="w-5 h-5 text-accentBlue" />
               </div>
               <div className="flex-1">
-                <h3 className="font-semibold text-gray-900 mb-2 leading-tight">
+                <h3 className="font-semibold text-gray-900 leading-tight">
                   {capability.title}
                 </h3>
-                <p className="text-sm text-gray-600">
-                  {capability.description}
-                </p>
               </div>
             </div>
+            
+            {/* Overlay */}
+            {isHovered && (
+              <div className="absolute inset-0 bg-white/95 backdrop-blur-sm border border-accentBlue/50 rounded-lg p-6 shadow-xl z-10 animate-fade-in">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 bg-accentBlue/20 rounded-lg flex items-center justify-center">
+                    <IconComponent className="w-5 h-5 text-accentBlue" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-semibold text-gray-900 mb-3 leading-tight">
+                      {capability.title}
+                    </h3>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {capability.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         );
       })}
