@@ -8,75 +8,87 @@ import { ArrowLeft } from "lucide-react";
 
 const ExampleClients = () => {
   return (
-    <div className="min-h-screen bg-[#fafbfc] font-inter text-gray-900">
+    <div className="min-h-screen bg-gradient-to-b from-deepNavy to-gradientEnd font-inter text-white">
       <Header />
       
       {/* Add top padding to account for fixed header */}
-      <main className="pt-20">
+      <main className="pt-16">
         {/* Back Navigation */}
-        <section className="w-full py-8 px-4 md:px-0">
-          <div className="max-w-5xl mx-auto">
+        <div className="w-full py-6 px-4 md:px-0 bg-cardBg/30 border-b border-white/10">
+          <div className="max-w-6xl mx-auto">
             <Link 
               to="/" 
-              className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 font-medium mb-8 transition-colors"
+              className="inline-flex items-center text-techGray-light hover:text-white transition-colors duration-200"
             >
-              <ArrowLeft size={20} />
+              <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Home
             </Link>
           </div>
-        </section>
+        </div>
 
         {/* Page Header */}
-        <section className="w-full py-8 px-4 md:px-0">
+        <section className="w-full py-16 px-4 md:px-0 bg-gradient-to-b from-deepNavy to-gradientEnd">
           <FadeInSection>
-            <div className="max-w-5xl mx-auto text-center">
-              <h1 className="font-inter font-bold text-4xl md:text-5xl tracking-tight mb-6 text-gray-900">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="font-grotesk font-bold text-4xl md:text-5xl tracking-tight mb-6 text-white">
                 Example Client Work
               </h1>
-              <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-                Real results from strategic partnerships with startups and growth-stage companies across various industries and stages.
+              <p className="text-xl text-techGray-light leading-relaxed max-w-3xl mx-auto">
+                Real projects, real results. Here's how we've helped companies accelerate their product strategy and execution.
               </p>
             </div>
           </FadeInSection>
         </section>
 
         {/* Client Case Studies */}
-        <section className="w-full py-16 px-4 md:px-0">
-          <FadeInSection delay={100}>
-            <div className="max-w-5xl mx-auto">
+        <section className="w-full py-20 px-4 md:px-0 bg-gradient-to-b from-gradientEnd to-lightGradientEnd">
+          <FadeInSection delay={200}>
+            <div className="max-w-6xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <WorkCard
-                  title="Customer Operations & BI – $45MM ARR SaaS Company"
-                  description="Led development of internal tools to reduce agent handling time and increase revenue. Improved team workflow through restructured prioritization and roadmap systems."
+                  title="Real Defense - Customer Care Platform"
+                  description="Led the development of a comprehensive customer care platform, resulting in 40% reduction in support ticket resolution time and improved customer satisfaction scores."
                 />
                 <WorkCard
-                  title="MVP Build – Early-Stage Real Estate Tech Startup"
-                  description="Scoped, defined, and delivered a new PM tool for real estate agents in partnership with the founding team. From concept to v1 launch with live customer deployment."
+                  title="StyleRow - Project Management Suite"
+                  description="Architected and launched a new project management solution that streamlined workflows for creative teams, leading to 60% improvement in project delivery times."
                 />
                 <WorkCard
-                  title="AI Leadership Platform – Pre-Seed Startup"
-                  description="Provided strategic guidance and product architecture design for a B2B2C platform focused on professional development and behavioral AI."
+                  title="BeClear - AI Leadership Platform"
+                  description="Spearheaded the product strategy for an AI-powered leadership development platform, successfully launching to market with 200+ enterprise customers in first year."
+                />
+                <WorkCard
+                  title="McCourt Global - Digital Transformation"
+                  description="Guided digital product strategy across multiple business units, establishing unified product development processes and increasing team velocity by 45%."
+                />
+                <WorkCard
+                  title="Resilia - Nonprofit Tech Platform"
+                  description="Redesigned core product experience for nonprofit organizations, resulting in 3x user engagement and significant improvements in grant application success rates."
+                />
+                <WorkCard
+                  title="TigerText - Healthcare Communication"
+                  description="Enhanced secure messaging platform for healthcare providers, achieving HIPAA compliance while improving user experience and reducing onboarding time by 50%."
                 />
               </div>
             </div>
           </FadeInSection>
         </section>
 
-        {/* CTA Section */}
-        <section className="w-full py-24 px-4 md:px-0 bg-white">
-          <FadeInSection delay={200}>
-            <div className="max-w-xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-gray-900">
-                Ready to Discuss Your Project?
+        {/* Call to Action */}
+        <section className="w-full py-20 px-4 md:px-0 bg-deepNavy">
+          <FadeInSection delay={400}>
+            <div className="max-w-2xl mx-auto text-center">
+              <h2 className="font-grotesk font-semibold text-3xl md:text-4xl mb-6 text-white">
+                Ready to Start Your Project?
               </h2>
-              <p className="text-gray-700 mb-8 text-lg">
-                Let's explore how we can help accelerate your growth and align your team around what matters most.
+              <p className="text-xl text-techGray-light mb-8 leading-relaxed">
+                Let's discuss how we can help accelerate your product strategy and execution.
               </p>
               <a
-                href="mailto:hello@yourdomain.com"
-                className="inline-block bg-accentBlue hover:bg-blue-800 text-white px-8 py-3 rounded-full text-base font-bold shadow transition-colors"
+                href="mailto:teejayt73@gmail.com"
+                className="inline-flex items-center border border-techBlue hover:border-neonBlue hover:bg-neonBlue hover:text-deepNavy text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,255,0.6)] uppercase tracking-wider"
               >
-                Book a Discovery Call
+                → Book a Discovery Call
               </a>
             </div>
           </FadeInSection>

@@ -63,18 +63,23 @@ export default {
           border: 'hsl(var(--sidebar-border))',
           ring: 'hsl(var(--sidebar-ring))'
         },
-        // High-tech executive color palette
+        // High-tech executive palette - updated spec
+        deepNavy: "#0A0F2C",
+        gradientEnd: "#151A35",
+        cardBg: "#111827",
+        lightGradientEnd: "#1C1F3C",
         techBlue: {
-          DEFAULT: '#2F80ED',
-          light: '#56CCF2',
-          gradient: 'linear-gradient(135deg, #2F80ED, #56CCF2)'
+          DEFAULT: "#2F80ED",
+          light: "#56CCF2",
+          dark: "#1565C0",
         },
+        neonBlue: "#00FFFF",
         techGray: {
-          light: '#C5C5D2',
-          dark: '#111827'
+          light: "#C5C5D2",
+          DEFAULT: "#888C9B",
+          dark: "#111827",
         },
-        neonBlue: '#00FFFF',
-        deepNavy: '#0A0F2C',
+        footerText: "#888C9B",
         // Legacy colors for compatibility
         accentYellow: "#FFC72C",
         accentBlue: "#2F80ED",
@@ -133,6 +138,14 @@ export default {
           '50%': {
             boxShadow: '0 0 40px rgba(0, 255, 255, 0.8)'
           }
+        },
+        'underline-expand': {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' }
+        },
+        'slide-in-right': {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0)' }
         }
       },
       animation: {
@@ -140,7 +153,9 @@ export default {
         'accordion-up': 'accordion-up 0.2s ease-out',
         'fade-in': 'fade-in 0.6s ease-out',
         'hero-enter': 'hero-enter 0.8s ease-out',
-        'glow': 'glow 2s ease-in-out infinite'
+        'glow': 'glow 2s ease-in-out infinite',
+        'underline-expand': 'underline-expand 0.3s ease-out',
+        'slide-in-right': 'slide-in-right 0.3s ease-out'
       }
     }
   },
