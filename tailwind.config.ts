@@ -63,14 +63,26 @@ export default {
           border: 'hsl(var(--sidebar-border))',
           ring: 'hsl(var(--sidebar-ring))'
         },
-        // Add custom accent yellow (similar to screenshot's callout)
+        // High-tech executive color palette
+        techBlue: {
+          DEFAULT: '#2F80ED',
+          light: '#56CCF2',
+          gradient: 'linear-gradient(135deg, #2F80ED, #56CCF2)'
+        },
+        techGray: {
+          light: '#C5C5D2',
+          dark: '#111827'
+        },
+        neonBlue: '#00FFFF',
+        deepNavy: '#0A0F2C',
+        // Legacy colors for compatibility
         accentYellow: "#FFC72C",
-        // Add primary CTA blue (similar to screenshot)
-        accentBlue: "#2445E2",
+        accentBlue: "#2F80ED",
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
-        // playfair: ['Playfair Display', 'serif'], // uncomment if you want a serif option
+        grotesk: ['Space Grotesk', 'Inter', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -93,11 +105,42 @@ export default {
           to: {
             height: '0'
           }
+        },
+        'fade-in': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(20px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          }
+        },
+        'hero-enter': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(30px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          }
+        },
+        'glow': {
+          '0%, 100%': {
+            boxShadow: '0 0 20px rgba(0, 255, 255, 0.5)'
+          },
+          '50%': {
+            boxShadow: '0 0 40px rgba(0, 255, 255, 0.8)'
+          }
         }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out'
+        'accordion-up': 'accordion-up 0.2s ease-out',
+        'fade-in': 'fade-in 0.6s ease-out',
+        'hero-enter': 'hero-enter 0.8s ease-out',
+        'glow': 'glow 2s ease-in-out infinite'
       }
     }
   },
