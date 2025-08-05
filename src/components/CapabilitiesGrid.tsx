@@ -6,17 +6,12 @@ const capabilities = [
   {
     title: "Fractional Product Leadership",
     icon: Users,
-    description: "Embed senior-level product leadership into your team to drive clarity, focus, and results—without the overhead of a full-time hire."
+    description: "Hands-on, executive-level product leadership from day one, without the full-time cost."
   },
   {
     title: "Cross-Functional Team Orchestration",
     icon: Target,
-    description: "Lead and align product, design, engineering, and business teams around shared goals with velocity and transparency."
-  },
-  {
-    title: "0→1 and 1→10 Product Development",
-    icon: Rocket,
-    description: "Guiding products from concept to MVP, and from MVP to real market traction and scaling."
+    description: "Aligning product, design, engineering, and business stakeholders around shared outcomes."
   },
   {
     title: "Customer-Centered Platform Design",
@@ -29,6 +24,21 @@ const capabilities = [
     description: "Using metrics, insights, and structured workflows to focus teams and accelerate delivery."
   },
   {
+    title: "Fast-Start Engagements That Deliver",
+    icon: Zap,
+    description: "Plug-and-play support that creates momentum and delivers results quickly."
+  },
+  {
+    title: "0→1 and 1→10 Product Development",
+    icon: Rocket,
+    description: "Guiding products from concept to MVP, and from MVP to real market traction, growth and scaling."
+  },
+  {
+    title: "AI & Emerging Tech Integration",
+    icon: Brain,
+    description: "Embedding practical AI and new technologies to unlock business value and velocity."
+  },
+  {
     title: "Go-to-Market (GTM) Strategy & Execution",
     icon: TrendingUp,
     description: "Connecting product, marketing, and sales to drive adoption, revenue, and brand."
@@ -36,22 +46,12 @@ const capabilities = [
   {
     title: "Enterprise Readiness & Scaling",
     icon: Building2,
-    description: "Design scalable infrastructure and internal processes that support client onboarding, customer care, and high-growth environments—experience spanning Series A startups to $50MM+ ARR businesses."
+    description: "Preparing products and teams for the next stage: scale, complexity, compliance, and growth."
   },
   {
-    title: "AI and Emerging Tech Integration",
-    icon: Brain,
-    description: "Shape and ship future-forward products—Web3 loyalty platforms, AI-powered coaching apps, or decentralized fan engagement tools—grounded in real commercial use cases."
-  },
-  {
-    title: "Executive-Level Communication & Strategy",
+    title: "Executive-Level Strategy & Communication",
     icon: Presentation,
-    description: "Craft and present compelling product strategies and business cases to boards, investors, and C-suites—securing funding and buy-in."
-  },
-  {
-    title: "Fast-Start Engagements That Deliver",
-    icon: Zap,
-    description: "Plug in quickly, find high-leverage opportunities, and start delivering value within the first week—ideal for fast-moving teams that need senior horsepower now."
+    description: "Translating vision into action through clear, confident, and strategic communication."
   }
 ];
 
