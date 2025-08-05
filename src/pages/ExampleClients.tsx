@@ -44,30 +44,53 @@ const ExampleClients = () => {
         <section className="w-full py-20 px-4 md:px-0 bg-gradient-to-b from-gradientEnd to-lightGradientEnd">
           <FadeInSection delay={200}>
             <div className="max-w-6xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                 <WorkCard
-                  title="Real Defense - Customer Care Platform"
-                  description="Led the development of a comprehensive customer care platform, resulting in 40% reduction in support ticket resolution time and improved customer satisfaction scores."
+                  company="Real Defense"
+                  subtitle="Product Strategy & Leadership for Growth-Stage Consumer SaaS"
+                  bullets={[
+                    "Partnered with this $50MM+ ARR company to drive multiple product initiatives across the customer care, BI, and eCommerce teams.",
+                    "Delivered a new internal call center platform that reduced agent handle time by 20% and increased average order value by 17%.",
+                    "Designed and launched a self-service customer dashboard for subscription and account management.",
+                    "Introduced prioritization frameworks to align cross-functional teams and accelerate delivery velocity."
+                  ]}
                 />
                 <WorkCard
-                  title="StyleRow - Project Management Suite"
-                  description="Architected and launched a new project management solution that streamlined workflows for creative teams, leading to 60% improvement in project delivery times."
+                  company="StyleRow"
+                  subtitle="End-to-End Product Ownership for New Market Expansion"
+                  bullets={[
+                    "Collaborated with the CEO and CRO of this $11MM+ Series A startup to expand into the real estate vertical.",
+                    "Acted as Head of Product to define, build, and launch a new transaction management platform for agents.",
+                    "Led product strategy, roadmap planning, and execution of the v1 release with a top-tier launch partner."
+                  ]}
                 />
                 <WorkCard
-                  title="BeClear - AI Leadership Platform"
-                  description="Spearheaded the product strategy for an AI-powered leadership development platform, successfully launching to market with 200+ enterprise customers in first year."
+                  company="BeClear"
+                  subtitle="AI-Powered Platform Design for Executive Coaching Startup"
+                  bullets={[
+                    "Co-created the product foundation for this pre-seed B2B2C leadership development platform.",
+                    "Led product architecture and feature design for a real-time, AI-driven coaching experience.",
+                    "Provided strategic guidance on go-to-market positioning, business model, and investor readiness."
+                  ]}
                 />
                 <WorkCard
-                  title="McCourt Global - Digital Transformation"
-                  description="Guided digital product strategy across multiple business units, establishing unified product development processes and increasing team velocity by 45%."
+                  company="McCourt Global (Amplica Labs)"
+                  subtitle="Product and Operations Leadership for Web3 Innovation Group"
+                  bullets={[
+                    "Led product strategy and operations for a global digital transformation initiative backed by McCourt Global.",
+                    "Built and managed a 25-person international team across product, engineering, and marketing.",
+                    "Designed and launched blockchain-based fan engagement platforms with Olympique de Marseille and Monaco Grand Prix, achieving 20%+ conversion and 91% retention.",
+                    "Secured board-level investment by presenting vision and commercial strategy for multiple Web3 applications."
+                  ]}
                 />
                 <WorkCard
-                  title="Resilia - Nonprofit Tech Platform"
-                  description="Redesigned core product experience for nonprofit organizations, resulting in 3x user engagement and significant improvements in grant application success rates."
-                />
-                <WorkCard
-                  title="TigerText - Healthcare Communication"
-                  description="Enhanced secure messaging platform for healthcare providers, achieving HIPAA compliance while improving user experience and reducing onboarding time by 50%."
+                  company="Resilia"
+                  subtitle="Interim Product Leadership for Series A Readiness"
+                  bullets={[
+                    "Engaged by Mucker Capital to lead product through a critical funding transition.",
+                    "Redesigned Resilia's enterprise nonprofit platform to support scalable impact reporting for grantmakers.",
+                    "Translated business vision into a clear, actionable roadmap and helped recruit long-term product leadership."
+                  ]}
                 />
               </div>
             </div>
