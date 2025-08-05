@@ -146,7 +146,7 @@ const Index = () => (
                     key={index}
                     className="group cursor-pointer transition-all duration-300 hover:scale-110"
                   >
-                    <div className="flex flex-col items-center gap-3 p-4 rounded-lg bg-cardBg/50 border border-white/5 group-hover:border-techBlue-light/30 group-hover:shadow-[0_0_20px_rgba(86,204,242,0.2)] transition-all duration-300">
+                    <div className="flex flex-col items-center gap-3 p-4 rounded-lg bg-white border border-gray-200 group-hover:border-techBlue-light/30 group-hover:shadow-[0_0_20px_rgba(86,204,242,0.2)] transition-all duration-300">
                       {client.hasLogo ? (
                         client.name === "BeClear" ? (
                           <div className="w-16 h-8 flex items-center justify-center">
@@ -162,7 +162,7 @@ const Index = () => (
                                 <div className="absolute inset-[4px] bg-white rounded-full"></div>
                                 <div className="absolute inset-[5px] bg-gradient-to-br from-[#00A8CC] to-[#0078A0] rounded-full"></div>
                               </div>
-                              <span className="text-white font-bold text-sm">AT&T</span>
+                              <span className="text-black font-bold text-sm">AT&T</span>
                             </div>
                           </div>
                         ) : client.name === "Resilia" ? (
@@ -182,14 +182,14 @@ const Index = () => (
                             />
                           </div>
                         ) : (
-                          <IconComponent className="w-8 h-8 text-techGray-light group-hover:text-techBlue-light transition-colors duration-300" />
+                           <IconComponent className="w-8 h-8 text-gray-600 group-hover:text-techBlue-light transition-colors duration-300" />
                         )
                       ) : (
-                        <IconComponent className="w-8 h-8 text-techGray-light group-hover:text-techBlue-light transition-colors duration-300" />
+                        <IconComponent className="w-8 h-8 text-gray-600 group-hover:text-techBlue-light transition-colors duration-300" />
                       )}
-                      <span className="text-sm text-techGray-light group-hover:text-white font-medium">
-                        {client.name}
-                      </span>
+                       <span className="text-sm text-gray-700 group-hover:text-black font-medium">
+                         {client.name}
+                       </span>
                     </div>
                   </div>
                 );
