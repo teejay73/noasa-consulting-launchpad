@@ -187,9 +187,11 @@ const Index = () => (
                       ) : (
                         <IconComponent className="w-8 h-8 text-gray-600 group-hover:text-techBlue-light transition-colors duration-300" />
                       )}
-                       <span className="text-sm text-gray-700 group-hover:text-black font-medium">
-                         {client.name}
-                       </span>
+                       {client.name !== "Evite" && (
+                         <span className="text-sm text-gray-700 group-hover:text-black font-medium">
+                           {client.name}
+                         </span>
+                       )}
                     </div>
                   </div>
                 );
