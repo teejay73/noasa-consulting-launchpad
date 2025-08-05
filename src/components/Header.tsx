@@ -27,7 +27,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/63da416f-5f87-484a-bc89-78c11df01d79.png" 
               alt="Noasa Consulting" 
-              className="h-12 w-auto"
+              className="h-20 w-auto"
             />
           </Link>
 
