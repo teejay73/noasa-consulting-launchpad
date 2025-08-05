@@ -130,14 +130,14 @@ const Index = () => (
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
               {[
-                { name: "Real Defense", icon: Shield },
-                { name: "StyleRow", icon: Ruler },
-                { name: "BeClear", icon: Brain },
-                { name: "McCourt Global", icon: Building },
-                { name: "Resilia", icon: Rocket },
-                { name: "TigerText", icon: Zap },
-                { name: "AT&T Interactive", icon: Target },
-                { name: "Evite", icon: Users }
+                { name: "Real Defense", icon: Shield, hasLogo: false },
+                { name: "StyleRow", icon: Ruler, hasLogo: false },
+                { name: "BeClear", icon: Brain, hasLogo: true },
+                { name: "McCourt Global", icon: Building, hasLogo: false },
+                { name: "Resilia", icon: Rocket, hasLogo: false },
+                { name: "TigerText", icon: Zap, hasLogo: false },
+                { name: "AT&T Interactive", icon: Target, hasLogo: true },
+                { name: "Evite", icon: Users, hasLogo: false }
               ].map((client, index) => {
                 const IconComponent = client.icon;
                 return (
@@ -146,7 +146,30 @@ const Index = () => (
                     className="group cursor-pointer transition-all duration-300 hover:scale-110"
                   >
                     <div className="flex flex-col items-center gap-3 p-4 rounded-lg bg-cardBg/50 border border-white/5 group-hover:border-techBlue-light/30 group-hover:shadow-[0_0_20px_rgba(86,204,242,0.2)] transition-all duration-300">
-                      <IconComponent className="w-8 h-8 text-techGray-light group-hover:text-techBlue-light transition-colors duration-300" />
+                      {client.hasLogo ? (
+                        client.name === "BeClear" ? (
+                          <div className="w-16 h-8 flex items-center justify-center">
+                            <span className="text-[#4A90A4] font-bold text-lg tracking-tight">Be.Clear</span>
+                          </div>
+                        ) : client.name === "AT&T Interactive" ? (
+                          <div className="w-20 h-8 flex items-center justify-center">
+                            <div className="flex items-center gap-1">
+                              <div className="w-6 h-6 rounded-full bg-gradient-to-br from-[#00A8CC] to-[#0078A0] flex items-center justify-center relative overflow-hidden">
+                                <div className="absolute inset-0 bg-gradient-to-br from-[#00A8CC] to-[#0078A0]"></div>
+                                <div className="absolute inset-[2px] bg-white rounded-full"></div>
+                                <div className="absolute inset-[3px] bg-gradient-to-br from-[#00A8CC] to-[#0078A0] rounded-full"></div>
+                                <div className="absolute inset-[4px] bg-white rounded-full"></div>
+                                <div className="absolute inset-[5px] bg-gradient-to-br from-[#00A8CC] to-[#0078A0] rounded-full"></div>
+                              </div>
+                              <span className="text-white font-bold text-sm">AT&T</span>
+                            </div>
+                          </div>
+                        ) : (
+                          <IconComponent className="w-8 h-8 text-techGray-light group-hover:text-techBlue-light transition-colors duration-300" />
+                        )
+                      ) : (
+                        <IconComponent className="w-8 h-8 text-techGray-light group-hover:text-techBlue-light transition-colors duration-300" />
+                      )}
                       <span className="text-sm text-techGray-light group-hover:text-white font-medium">
                         {client.name}
                       </span>
