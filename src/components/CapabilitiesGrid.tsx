@@ -6,7 +6,7 @@ const capabilities = [
   {
     title: "Fractional Product Leadership",
     icon: Users,
-    description: "Hands-on, executive-level product leadership from day one, without the full-time cost."
+    description: "Hands-on, executive-level product leadership that ramps fast, embeds seamlessly, and delivers from day one, without the full-time cost."
   },
   {
     title: "Cross-Functional Team Orchestration",
@@ -22,11 +22,6 @@ const capabilities = [
     title: "Data-Driven Prioritization & Operations",
     icon: BarChart3,
     description: "Using metrics, insights, and structured workflows to focus teams and accelerate delivery."
-  },
-  {
-    title: "Fast-Start Engagements That Deliver",
-    icon: Zap,
-    description: "Plug-and-play support that creates momentum and delivers results quickly."
   },
   {
     title: "0→1 and 1→10 Product Development",
