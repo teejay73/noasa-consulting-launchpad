@@ -138,7 +138,7 @@ const Index = () => (
                 { name: "Resilia", icon: Rocket, hasLogo: true },
                 { name: "TigerText", icon: Zap, hasLogo: false },
                 { name: "AT&T Interactive", icon: Target, hasLogo: true },
-                { name: "Evite", icon: Users, hasLogo: false }
+                { name: "Evite", icon: Users, hasLogo: true }
               ].map((client, index) => {
                 const IconComponent = client.icon;
                 return (
@@ -170,6 +170,14 @@ const Index = () => (
                             <img 
                               src="/lovable-uploads/9e13c6a3-da6c-48ae-8eeb-3661309174f8.png" 
                               alt="Resilia" 
+                              className="h-6 w-auto"
+                            />
+                          </div>
+                        ) : client.name === "Evite" ? (
+                          <div className="w-16 h-8 flex items-center justify-center">
+                            <img 
+                              src="/lovable-uploads/e62d8268-5cc2-45b3-9f5d-20622909fde4.png" 
+                              alt="Evite" 
                               className="h-6 w-auto"
                             />
                           </div>
