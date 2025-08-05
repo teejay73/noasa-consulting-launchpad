@@ -5,7 +5,7 @@ const CLIENTS_DATA = [
   { name: "Real Defense", hasLogo: false },
   { name: "StyleRow", hasLogo: false },
   { name: "BeClear", hasLogo: true },
-  { name: "McCourt Global", hasLogo: false },
+  { name: "McCourt Global", hasLogo: true },
   { name: "Resilia", hasLogo: false },
   { name: "Tigertext", hasLogo: false },
   { name: "AT&T Interactive", hasLogo: true },
@@ -34,6 +34,16 @@ const ATTLogo = () => (
   </div>
 );
 
+const McCourtLogo = () => (
+  <div className="w-12 h-8 flex items-center justify-center">
+    <img 
+      src="/lovable-uploads/9c690c92-d62f-4d6e-b01e-70d4e13bb9ad.png" 
+      alt="McCourt Global" 
+      className="h-6 w-auto"
+    />
+  </div>
+);
+
 const EviteLogo = () => (
   <div className="w-12 h-8 flex items-center justify-center">
     <img 
@@ -56,13 +66,16 @@ const ClientLogoGrid = () => (
             {client.hasLogo ? (
               client.name === "BeClear" ? <BeClearLogo /> :
               client.name === "AT&T Interactive" ? <ATTLogo /> :
+              client.name === "McCourt Global" ? <McCourtLogo /> :
               client.name === "Evite" ? <EviteLogo /> :
               <span className="font-bold text-md text-gray-500 select-none">{client.name.split(" ").map(w => w[0]).join("")}</span>
             ) : (
               <span className="font-bold text-md text-gray-500 select-none">{client.name.split(" ").map(w => w[0]).join("")}</span>
             )}
           </div>
-          <span className="text-[13px] text-gray-500">{client.name}</span>
+          {client.name !== "Evite" && client.name !== "McCourt Global" && (
+            <span className="text-[13px] text-gray-500">{client.name}</span>
+          )}
         </div>
       ))}
     </div>

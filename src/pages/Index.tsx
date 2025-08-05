@@ -134,7 +134,7 @@ const Index = () => (
                 { name: "Real Defense", icon: Shield, hasLogo: false },
                 { name: "StyleRow", icon: Ruler, hasLogo: false },
                 { name: "BeClear", icon: Brain, hasLogo: true },
-                { name: "McCourt Global", icon: Building, hasLogo: false },
+                { name: "McCourt Global", icon: Building, hasLogo: true },
                 { name: "Resilia", icon: Rocket, hasLogo: true },
                 { name: "TigerText", icon: Zap, hasLogo: false },
                 { name: "AT&T Interactive", icon: Target, hasLogo: true },
@@ -165,6 +165,14 @@ const Index = () => (
                               <span className="text-black font-bold text-sm">AT&T</span>
                             </div>
                           </div>
+                        ) : client.name === "McCourt Global" ? (
+                          <div className="w-16 h-16 flex items-center justify-center">
+                            <img 
+                              src="/lovable-uploads/9c690c92-d62f-4d6e-b01e-70d4e13bb9ad.png" 
+                              alt="McCourt Global" 
+                              className="h-10 w-auto"
+                            />
+                          </div>
                         ) : client.name === "Resilia" ? (
                           <div className="w-16 h-8 flex items-center justify-center">
                             <img 
@@ -187,7 +195,7 @@ const Index = () => (
                       ) : (
                         <IconComponent className="w-8 h-8 text-gray-600 group-hover:text-techBlue-light transition-colors duration-300" />
                       )}
-                       {client.name !== "Evite" && (
+                       {client.name !== "Evite" && client.name !== "McCourt Global" && (
                          <span className="text-sm text-gray-700 group-hover:text-black font-medium">
                            {client.name}
                          </span>
