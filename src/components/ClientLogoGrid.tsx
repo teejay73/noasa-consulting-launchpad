@@ -9,7 +9,7 @@ const CLIENTS_DATA = [
   { name: "Resilia", hasLogo: false },
   { name: "Tigertext", hasLogo: false },
   { name: "AT&T Interactive", hasLogo: true },
-  { name: "Evite", hasLogo: false },
+  { name: "Evite", hasLogo: true },
 ];
 
 // Logo components for clients with actual logos
@@ -34,6 +34,16 @@ const ATTLogo = () => (
   </div>
 );
 
+const EviteLogo = () => (
+  <div className="w-12 h-8 flex items-center justify-center">
+    <img 
+      src="/lovable-uploads/7d3bdd8b-649d-438f-a757-5cc7761d53d2.png" 
+      alt="Evite" 
+      className="h-6 w-auto"
+    />
+  </div>
+);
+
 const ClientLogoGrid = () => (
   <div className="flex w-full overflow-x-auto py-2">
     <div className="flex gap-8 min-w-[680px] md:min-w-[850px] mx-auto">
@@ -46,6 +56,7 @@ const ClientLogoGrid = () => (
             {client.hasLogo ? (
               client.name === "BeClear" ? <BeClearLogo /> :
               client.name === "AT&T Interactive" ? <ATTLogo /> :
+              client.name === "Evite" ? <EviteLogo /> :
               <span className="font-bold text-md text-gray-500 select-none">{client.name.split(" ").map(w => w[0]).join("")}</span>
             ) : (
               <span className="font-bold text-md text-gray-500 select-none">{client.name.split(" ").map(w => w[0]).join("")}</span>
