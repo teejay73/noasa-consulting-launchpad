@@ -25,7 +25,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center hover:opacity-80 transition-opacity duration-300">
             <img 
-              src="/lovable-uploads/63da416f-5f87-484a-bc89-78c11df01d79.png" 
+              src="/lovable-uploads/b303eb20-a0ae-41cb-b9ec-410c0906818c.png" 
               alt="Noasa Consulting" 
               className="h-20 w-auto"
             />
