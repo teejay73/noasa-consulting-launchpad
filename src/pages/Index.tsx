@@ -18,8 +18,8 @@ const Index = () => (
         <FadeInSection>
           <div className="max-w-5xl mx-auto relative z-10">
             {/* Main headline - Left aligned */}
-            <h1 className="font-grotesk font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight mb-8 leading-tight animate-hero-enter text-left">
-              Product Consulting for <span className="text-neonBlue drop-shadow-[0_0_15px_rgba(0,255,255,0.8)]">Startups</span> and Growth-Stage Companies
+            <h1 className="font-grotesk font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight mb-8 leading-tight animate-hero-enter text-left bg-gradient-to-r from-white via-techBlue-light to-neonBlue bg-clip-text text-transparent">
+              Product Consulting for <span className="drop-shadow-[0_0_15px_rgba(0,255,255,0.8)]">Startups</span> and Growth-Stage Companies
             </h1>
             
             {/* Subheadline - Left aligned, 70% max width */}
