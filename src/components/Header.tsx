@@ -34,10 +34,10 @@ const Header = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link 
-              to="/example-clients" 
+              to="/client-success-stories" 
               className="text-white hover:text-techBlue-light font-medium transition-all duration-300 relative group"
             >
-              Example Clients
+              Client Success Stories
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-techBlue-light transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <a
@@ -63,11 +63,11 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden absolute top-16 left-0 right-0 bg-deepNavy backdrop-blur-sm border-b border-white/10 px-4 py-6 space-y-4 animate-slide-in-right">
             <Link
-              to="/example-clients"
+              to="/client-success-stories"
               onClick={() => setIsMenuOpen(false)}
               className="block text-white hover:text-techBlue-light font-medium transition-all duration-300 py-2"
             >
-              Example Clients
+              Client Success Stories
             </Link>
             <a
               href="https://calendly.com/teejayt73/30min"

@@ -31,10 +31,10 @@ const ExampleClients = () => {
           <FadeInSection>
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="font-grotesk font-bold text-4xl md:text-5xl tracking-tight mb-6 text-white">
-                Example Client Work
+                Client Success Stories
               </h1>
               <p className="text-xl text-techGray-light leading-relaxed max-w-3xl mx-auto">
-                Real projects, real results. Here's how we've helped companies accelerate their product strategy and execution.
+                Discover how we've transformed businesses through strategic product leadership and execution excellence.
               </p>
             </div>
           </FadeInSection>
