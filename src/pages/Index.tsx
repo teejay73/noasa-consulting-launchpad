@@ -19,7 +19,7 @@ const Index = () => (
           <div className="max-w-5xl mx-auto relative z-10">
             {/* Main headline - Left aligned */}
             <h1 className="font-grotesk font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight mb-8 leading-tight animate-hero-enter text-left">
-              <span className="bg-gradient-to-r from-techBlue-light to-neonBlue bg-clip-text text-transparent">Product</span> Consulting for <span className="bg-gradient-to-r from-techBlue-light to-neonBlue bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(0,255,255,0.8)]">Startups</span> and <span className="bg-gradient-to-r from-techBlue-light to-neonBlue bg-clip-text text-transparent">Growth-Stage</span> Companies
+              <span className="text-techBlue-light">Product Consulting for Startups</span> <span className="text-white">and Growth-Stage Companies</span>
             </h1>
             
             {/* Subheadline - Left aligned, 70% max width */}
