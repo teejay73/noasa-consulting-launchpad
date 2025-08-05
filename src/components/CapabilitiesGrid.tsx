@@ -14,24 +14,24 @@ const capabilities = [
     description: "Lead and align product, design, engineering, and business teams around shared goals with velocity and transparency."
   },
   {
-    title: "Zero-to-One Product Development",
+    title: "0→1 and 1→10 Product Development",
     icon: Rocket,
-    description: "Take early-stage concepts from idea to launch with structured, validated roadmaps and crisp execution—used by startups like StyleRow and BeClear."
+    description: "Guiding products from concept to MVP, and from MVP to real market traction and scaling."
   },
   {
-    title: "Customer-Centric Platform Design",
+    title: "Customer-Centered Platform Design",
     icon: Heart,
-    description: "Build product experiences around the real needs of users—improving retention, satisfaction, and business outcomes, as proven across B2B2C and enterprise SaaS platforms."
+    description: "Building intuitive, scalable products rooted in real user needs and behavior."
   },
   {
-    title: "Data-Informed Prioritization and Ops",
+    title: "Data-Driven Prioritization & Operations",
     icon: BarChart3,
-    description: "Set up frameworks that move product and BI teams from siloed activity to business-aligned delivery—like at Real Defense's BI and Ecommerce functions."
+    description: "Using metrics, insights, and structured workflows to focus teams and accelerate delivery."
   },
   {
-    title: "GTM and Monetization Strategy",
+    title: "Go-to-Market (GTM) Strategy & Execution",
     icon: TrendingUp,
-    description: "Translate product innovation into market traction and revenue through positioning, packaging, and cross-channel rollout planning."
+    description: "Connecting product, marketing, and sales to drive adoption, revenue, and brand."
   },
   {
     title: "Enterprise Readiness & Scaling",
@@ -67,17 +67,17 @@ const CapabilitiesGrid = () => {
         return (
           <div
             key={index}
-            className="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg hover:border-accentBlue/30 transition-all duration-300 cursor-pointer"
+            className="relative bg-cardBg/50 border border-white/5 rounded-lg p-6 hover:shadow-[0_0_20px_rgba(86,204,242,0.2)] hover:border-techBlue-light/30 transition-all duration-300 cursor-pointer"
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
             onClick={() => setHoveredIndex(isHovered ? null : index)} // For mobile
           >
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-accentBlue/10 rounded-lg flex items-center justify-center">
-                <IconComponent className="w-5 h-5 text-accentBlue" />
+              <div className="flex-shrink-0 w-10 h-10 bg-techBlue-light/10 rounded-lg flex items-center justify-center">
+                <IconComponent className="w-5 h-5 text-techBlue-light" />
               </div>
               <div className="flex-1">
-                <h3 className="font-semibold text-gray-900 leading-tight">
+                <h3 className="font-semibold text-white leading-tight">
                   {capability.title}
                 </h3>
               </div>
@@ -85,16 +85,16 @@ const CapabilitiesGrid = () => {
             
             {/* Overlay */}
             {isHovered && (
-              <div className="absolute inset-0 bg-white/95 backdrop-blur-sm border border-accentBlue/50 rounded-lg p-6 shadow-xl z-10 animate-fade-in">
+              <div className="absolute inset-0 bg-cardBg/95 backdrop-blur-sm border border-techBlue-light/50 rounded-lg p-6 shadow-xl z-10 animate-fade-in">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 bg-accentBlue/20 rounded-lg flex items-center justify-center">
-                    <IconComponent className="w-5 h-5 text-accentBlue" />
+                  <div className="flex-shrink-0 w-10 h-10 bg-techBlue-light/20 rounded-lg flex items-center justify-center">
+                    <IconComponent className="w-5 h-5 text-techBlue-light" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-semibold text-gray-900 mb-3 leading-tight">
+                    <h3 className="font-semibold text-white mb-3 leading-tight">
                       {capability.title}
                     </h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">
+                    <p className="text-sm text-techGray-light leading-relaxed">
                       {capability.description}
                     </p>
                   </div>

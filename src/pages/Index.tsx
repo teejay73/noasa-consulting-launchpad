@@ -2,6 +2,7 @@
 import React from "react";
 import Header from "../components/Header";
 import FadeInSection from "../components/FadeInSection";
+import CapabilitiesGrid from "../components/CapabilitiesGrid";
 import { Shield, Ruler, Brain, CheckCircle, Zap, Target, Users, Rocket, Building } from "lucide-react";
 
 const Index = () => (
@@ -190,46 +191,7 @@ const Index = () => (
               Where Noasa Consulting Makes a High Impact
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {[
-                {
-                  title: "Product Strategy & Vision",
-                  description: "Defining clear product roadmaps, market positioning, and long-term strategic direction that aligns with business objectives."
-                },
-                {
-                  title: "Team Leadership & Scaling",
-                  description: "Building and leading high-performing product teams, establishing processes, and creating culture of innovation and execution."
-                },
-                {
-                  title: "Go-to-Market Excellence",
-                  description: "Orchestrating successful product launches, pricing strategies, and market entry approaches that drive adoption and growth."
-                },
-                {
-                  title: "Operational Transformation",
-                  description: "Implementing agile methodologies, optimizing workflows, and establishing metrics-driven decision making frameworks."
-                },
-                {
-                  title: "Stakeholder Alignment",
-                  description: "Creating clear communication channels, managing expectations, and ensuring all stakeholders are aligned on priorities and outcomes."
-                },
-                {
-                  title: "Innovation & Growth",
-                  description: "Identifying new opportunities, driving product innovation, and scaling systems to support rapid business growth."
-                }
-              ].map((capability, index) => (
-                <div
-                  key={index}
-                  className="bg-cardBg rounded-xl p-8 border border-white/10 hover:border-techBlue-light/50 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-[0_15px_50px_rgba(47,128,237,0.3)] group"
-                >
-                  <h3 className="font-grotesk font-semibold text-xl md:text-2xl text-white mb-4 group-hover:text-techBlue-light transition-colors duration-300">
-                    {capability.title}
-                  </h3>
-                  <p className="text-techGray-light text-lg leading-relaxed">
-                    {capability.description}
-                  </p>
-                </div>
-              ))}
-            </div>
+            <CapabilitiesGrid />
           </div>
         </FadeInSection>
       </section>
