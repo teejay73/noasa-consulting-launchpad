@@ -135,7 +135,7 @@ const Index = () => (
                 { name: "StyleRow", icon: Ruler, hasLogo: false },
                 { name: "BeClear", icon: Brain, hasLogo: true },
                 { name: "McCourt Global", icon: Building, hasLogo: false },
-                { name: "Resilia", icon: Rocket, hasLogo: false },
+                { name: "Resilia", icon: Rocket, hasLogo: true },
                 { name: "TigerText", icon: Zap, hasLogo: false },
                 { name: "AT&T Interactive", icon: Target, hasLogo: true },
                 { name: "Evite", icon: Users, hasLogo: false }
@@ -164,6 +164,14 @@ const Index = () => (
                               </div>
                               <span className="text-white font-bold text-sm">AT&T</span>
                             </div>
+                          </div>
+                        ) : client.name === "Resilia" ? (
+                          <div className="w-16 h-8 flex items-center justify-center">
+                            <img 
+                              src="/lovable-uploads/9e13c6a3-da6c-48ae-8eeb-3661309174f8.png" 
+                              alt="Resilia" 
+                              className="h-6 w-auto"
+                            />
                           </div>
                         ) : (
                           <IconComponent className="w-8 h-8 text-techGray-light group-hover:text-techBlue-light transition-colors duration-300" />
