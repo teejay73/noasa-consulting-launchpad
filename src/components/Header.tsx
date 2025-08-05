@@ -37,7 +37,9 @@ const Header = () => {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-techBlue-light transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <a
-              href="mailto:teejayt73@gmail.com"
+              href="https://calendly.com/teejayt73/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="border border-techBlue hover:border-neonBlue hover:bg-neonBlue hover:text-deepNavy text-white px-6 py-2 rounded-lg font-bold transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,255,0.6)] uppercase tracking-wide"
             >
               → Book a Discovery Call
@@ -64,7 +66,9 @@ const Header = () => {
               Example Clients
             </Link>
             <a
-              href="mailto:teejayt73@gmail.com"
+              href="https://calendly.com/teejayt73/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsMenuOpen(false)}
               className="block border border-techBlue hover:border-neonBlue hover:bg-neonBlue hover:text-deepNavy text-white px-6 py-3 rounded-lg font-bold transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,255,0.6)] uppercase tracking-wide text-center mt-4"
             >
