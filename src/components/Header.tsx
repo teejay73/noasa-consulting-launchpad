@@ -23,8 +23,12 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="font-grotesk font-bold text-xl text-white hover:text-techBlue-light transition-colors duration-300">
-            NOASA CONSULTING
+          <Link to="/" className="flex items-center hover:opacity-80 transition-opacity duration-300">
+            <img 
+              src="/lovable-uploads/ce769191-c7d7-40ca-b7f2-eefad6aa2be3.png" 
+              alt="Noasa Consulting" 
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
