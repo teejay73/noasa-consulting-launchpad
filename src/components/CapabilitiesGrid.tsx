@@ -56,51 +56,29 @@ const capabilities = [
 ];
 
 const CapabilitiesGrid = () => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {capabilities.map((capability, index) => {
         const IconComponent = capability.icon;
-        const isHovered = hoveredIndex === index;
         
         return (
           <div
             key={index}
-            className="relative bg-cardBg/50 border border-white/5 rounded-lg p-6 hover:shadow-[0_0_20px_rgba(86,204,242,0.2)] hover:border-techBlue-light/30 transition-all duration-300 cursor-pointer"
-            onMouseEnter={() => setHoveredIndex(index)}
-            onMouseLeave={() => setHoveredIndex(null)}
-            onClick={() => setHoveredIndex(isHovered ? null : index)} // For mobile
+            className="bg-cardBg/50 border border-white/5 rounded-lg p-6 hover:shadow-[0_0_20px_rgba(86,204,242,0.2)] hover:border-techBlue-light/30 transition-all duration-300"
           >
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0 w-10 h-10 bg-techBlue-light/10 rounded-lg flex items-center justify-center">
                 <IconComponent className="w-5 h-5 text-techBlue-light" />
               </div>
               <div className="flex-1">
-                <h3 className="font-semibold text-white leading-tight">
+                <h3 className="font-semibold text-white mb-3 leading-tight">
                   {capability.title}
                 </h3>
+                <p className="text-sm text-techGray-light leading-relaxed">
+                  {capability.description}
+                </p>
               </div>
             </div>
-            
-            {/* Overlay */}
-            {isHovered && (
-              <div className="absolute inset-0 bg-cardBg/95 backdrop-blur-sm border border-techBlue-light/50 rounded-lg p-6 shadow-xl z-10 animate-fade-in">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 bg-techBlue-light/20 rounded-lg flex items-center justify-center">
-                    <IconComponent className="w-5 h-5 text-techBlue-light" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-white mb-3 leading-tight">
-                      {capability.title}
-                    </h3>
-                    <p className="text-sm text-techGray-light leading-relaxed">
-                      {capability.description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            )}
           </div>
         );
       })}
