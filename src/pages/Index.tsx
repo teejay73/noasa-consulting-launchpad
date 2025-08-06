@@ -149,8 +149,12 @@ const Index = () => (
                     <div className="flex flex-col items-center gap-3 p-4 rounded-lg bg-white border border-gray-200 group-hover:border-techBlue-light/30 group-hover:shadow-[0_0_20px_rgba(86,204,242,0.2)] transition-all duration-300">
                       {client.hasLogo ? (
                         client.name === "BeClear" ? (
-                          <div className="w-16 h-8 flex items-center justify-center">
-                            <span className="text-[#4A90A4] font-bold text-lg tracking-tight">Be.Clear</span>
+                          <div className="w-16 h-16 flex items-center justify-center">
+                            <img 
+                              src="/lovable-uploads/77b3a80f-7b00-45a0-8f55-cf0e389001e4.png" 
+                              alt="BeClear" 
+                              className="h-10 w-auto"
+                            />
                           </div>
                         ) : client.name === "AT&T Interactive" ? (
                           <div className="w-20 h-8 flex items-center justify-center">
@@ -195,7 +199,7 @@ const Index = () => (
                       ) : (
                         <IconComponent className="w-8 h-8 text-gray-600 group-hover:text-techBlue-light transition-colors duration-300" />
                       )}
-                       {client.name !== "Evite" && client.name !== "McCourt Global" && (
+                       {client.name !== "Evite" && client.name !== "McCourt Global" && client.name !== "BeClear" && (
                          <span className="text-sm text-gray-700 group-hover:text-black font-medium">
                            {client.name}
                          </span>

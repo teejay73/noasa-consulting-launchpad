@@ -15,7 +15,11 @@ const CLIENTS_DATA = [
 // Logo components for clients with actual logos
 const BeClearLogo = () => (
   <div className="w-12 h-8 flex items-center justify-center">
-    <span className="text-[#4A90A4] font-bold text-lg tracking-tight">Be.Clear</span>
+    <img 
+      src="/lovable-uploads/77b3a80f-7b00-45a0-8f55-cf0e389001e4.png" 
+      alt="BeClear" 
+      className="h-6 w-auto"
+    />
   </div>
 );
 
@@ -73,7 +77,7 @@ const ClientLogoGrid = () => (
               <span className="font-bold text-md text-gray-500 select-none">{client.name.split(" ").map(w => w[0]).join("")}</span>
             )}
           </div>
-          {client.name !== "Evite" && client.name !== "McCourt Global" && (
+          {client.name !== "Evite" && client.name !== "McCourt Global" && client.name !== "BeClear" && (
             <span className="text-[13px] text-gray-500">{client.name}</span>
           )}
         </div>
