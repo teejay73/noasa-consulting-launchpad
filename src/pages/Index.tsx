@@ -131,7 +131,7 @@ const Index = () => (
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
               {[
-                { name: "Real Defense", icon: Shield, hasLogo: false },
+                { name: "Real Defense", icon: Shield, hasLogo: true },
                 { name: "StyleRow", icon: Ruler, hasLogo: false },
                 { name: "BeClear", icon: Brain, hasLogo: true },
                 { name: "McCourt Global", icon: Building, hasLogo: true },
@@ -154,6 +154,14 @@ const Index = () => (
                               src="/lovable-uploads/77b3a80f-7b00-45a0-8f55-cf0e389001e4.png" 
                               alt="BeClear" 
                               className="h-16 w-auto"
+                            />
+                          </div>
+                        ) : client.name === "Real Defense" ? (
+                          <div className="w-16 h-16 flex items-center justify-center">
+                            <img 
+                              src="/lovable-uploads/f65f9ab9-718c-48b6-a2cf-d9f3adcc99da.png" 
+                              alt="Real Defense" 
+                              className="h-10 w-auto"
                             />
                           </div>
                         ) : client.name === "AT&T Interactive" ? (
@@ -199,7 +207,7 @@ const Index = () => (
                       ) : (
                         <IconComponent className="w-8 h-8 text-gray-600 group-hover:text-techBlue-light transition-colors duration-300" />
                       )}
-                       {client.name !== "Evite" && client.name !== "McCourt Global" && client.name !== "BeClear" && (
+                       {client.name !== "Evite" && client.name !== "McCourt Global" && client.name !== "BeClear" && client.name !== "Real Defense" && (
                          <span className="text-sm text-gray-700 group-hover:text-black font-medium">
                            {client.name}
                          </span>
