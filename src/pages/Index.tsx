@@ -165,11 +165,11 @@ const Index = () => (
                             />
                           </div>
                         ) : client.name === "StyleRow" ? (
-                          <div className="w-16 h-16 flex items-center justify-center">
+                          <div className="w-16 h-16 flex items-center justify-center overflow-hidden">
                             <img 
                               src="/lovable-uploads/b8b28767-6fcf-4f73-9936-6bb9e8e68d70.png" 
                               alt="StyleRow" 
-                               className="h-10 w-auto scale-[3.6]"
+                               className="w-16 h-auto origin-center scale-y-[1.5]"
                             />
                           </div>
                          ) : client.name === "AT&T Interactive" ? (
