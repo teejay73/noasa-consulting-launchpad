@@ -7,7 +7,7 @@ const CLIENTS_DATA = [
   { name: "BeClear", hasLogo: true },
   { name: "McCourt Global", hasLogo: true },
   { name: "Resilia", hasLogo: true },
-  { name: "Tigertext", hasLogo: false },
+  { name: "Tigertext", hasLogo: true },
   { name: "AT&T Interactive", hasLogo: true },
   { name: "Evite", hasLogo: true },
 ];
@@ -88,6 +88,16 @@ const ResiliaLogo = () => (
   </div>
 );
 
+const TigerTextLogo = () => (
+  <div className="w-16 h-16 flex items-center justify-center">
+    <img 
+      src="/lovable-uploads/3eb07ce8-7494-49e1-bc5e-3ef33c980f5e.png" 
+      alt="TigerText" 
+      className="h-10 w-auto"
+    />
+  </div>
+);
+
 const ClientLogoGrid = () => (
   <div className="flex w-full overflow-x-auto py-2">
     <div className="flex gap-8 min-w-[680px] md:min-w-[850px] mx-auto">
@@ -105,12 +115,13 @@ const ClientLogoGrid = () => (
               client.name === "McCourt Global" ? <McCourtLogo /> :
               client.name === "Resilia" ? <ResiliaLogo /> :
               client.name === "Evite" ? <EviteLogo /> :
+              client.name === "Tigertext" ? <TigerTextLogo /> :
               <span className="font-bold text-md text-gray-500 select-none">{client.name.split(" ").map(w => w[0]).join("")}</span>
             ) : (
               <span className="font-bold text-md text-gray-500 select-none">{client.name.split(" ").map(w => w[0]).join("")}</span>
             )}
           </div>
-          {client.name !== "Evite" && client.name !== "McCourt Global" && client.name !== "BeClear" && client.name !== "Real Defense" && client.name !== "StyleRow" && client.name !== "Resilia" && (
+          {client.name !== "Evite" && client.name !== "McCourt Global" && client.name !== "BeClear" && client.name !== "Real Defense" && client.name !== "StyleRow" && client.name !== "Resilia" && client.name !== "Tigertext" && (
             <span className="text-[13px] text-gray-500">{client.name}</span>
           )}
         </div>
