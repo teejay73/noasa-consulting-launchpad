@@ -161,7 +161,7 @@ const Index = () => (
                             <img 
                               src="/lovable-uploads/f65f9ab9-718c-48b6-a2cf-d9f3adcc99da.png" 
                               alt="Real Defense" 
-                              className="h-10 w-auto scale-[3]"
+                              className="h-10 w-auto scale-[2.1]"
                             />
                           </div>
                         ) : client.name === "AT&T Interactive" ? (
