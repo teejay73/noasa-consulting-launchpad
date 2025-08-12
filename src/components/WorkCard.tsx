@@ -6,17 +6,18 @@ interface WorkCardProps {
   subtitle: string;
   bullets: string[];
   logoUrl?: string;
+  logoClassName?: string;
   variant?: 'default' | 'beClear';
 }
 
-const WorkCard: React.FC<WorkCardProps> = ({ company, subtitle, bullets, logoUrl, variant = 'default' }) => {
+const WorkCard: React.FC<WorkCardProps> = ({ company, subtitle, bullets, logoUrl, logoClassName, variant = 'default' }) => {
   const containerClass = `relative bg-cardBg border border-white/10 hover:border-techBlue-light/50 rounded-lg p-6 ${variant === 'beClear' ? 'pt-12' : ''} h-full flex flex-col transition-all duration-300 hover:transform hover:scale-105 hover:shadow-[0_10px_40px_rgba(47,128,237,0.2)] group`;
 
   return (
     <div className={containerClass}>
       {variant === 'beClear' && logoUrl && (
         <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-white rounded-xl px-6 py-3 shadow-md border border-white/20">
-          <img src={logoUrl} alt={`${company} logo`} className="h-8 w-auto" loading="lazy" />
+          <img src={logoUrl} alt={`${company} logo`} className={`h-8 w-auto ${logoClassName || ''}`} loading="lazy" />
         </div>
       )}
 

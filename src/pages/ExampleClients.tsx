@@ -95,6 +95,9 @@ const ExampleClients = () => {
                     "Redesigned Resilia's enterprise nonprofit platform to support scalable impact reporting for grantmakers.",
                     "Translated business vision into a clear, actionable roadmap and helped recruit long-term product leadership."
                   ]}
+                  variant="beClear"
+                  logoUrl="/lovable-uploads/6b29020c-fe63-49f6-8c80-133632208d80.png"
+                  logoClassName="scale-x-[1.2]"
                 />
               </div>
             </div>
