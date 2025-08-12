@@ -14,11 +14,11 @@ const CLIENTS_DATA = [
 
 // Logo components for clients with actual logos
 const BeClearLogo = () => (
-  <div className="w-12 h-8 flex items-center justify-center">
+  <div className="w-16 h-16 flex items-center justify-center">
     <img 
       src="/lovable-uploads/77b3a80f-7b00-45a0-8f55-cf0e389001e4.png" 
       alt="BeClear" 
-      className="h-6 w-auto"
+      className="h-12 w-auto"
     />
   </div>
 );
