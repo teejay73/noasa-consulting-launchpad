@@ -172,20 +172,15 @@ const Index = () => (
                                className="h-10 w-auto scale-[2.4]"
                             />
                           </div>
-                        ) : client.name === "AT&T Interactive" ? (
-                          <div className="w-20 h-8 flex items-center justify-center">
-                            <div className="flex items-center gap-1">
-                              <div className="w-6 h-6 rounded-full bg-gradient-to-br from-[#00A8CC] to-[#0078A0] flex items-center justify-center relative overflow-hidden">
-                                <div className="absolute inset-0 bg-gradient-to-br from-[#00A8CC] to-[#0078A0]"></div>
-                                <div className="absolute inset-[2px] bg-white rounded-full"></div>
-                                <div className="absolute inset-[3px] bg-gradient-to-br from-[#00A8CC] to-[#0078A0] rounded-full"></div>
-                                <div className="absolute inset-[4px] bg-white rounded-full"></div>
-                                <div className="absolute inset-[5px] bg-gradient-to-br from-[#00A8CC] to-[#0078A0] rounded-full"></div>
-                              </div>
-                              <span className="text-black font-bold text-sm">AT&T</span>
-                            </div>
-                          </div>
-                        ) : client.name === "McCourt Global" ? (
+                         ) : client.name === "AT&T Interactive" ? (
+                           <div className="w-24 h-8 flex items-center justify-center">
+                             <img 
+                               src="/lovable-uploads/fb347e80-c9ad-4d82-9563-7f99476672cf.png" 
+                               alt="AT&T Interactive" 
+                               className="h-6 w-auto"
+                             />
+                           </div>
+                         ) : client.name === "McCourt Global" ? (
                           <div className="w-16 h-16 flex items-center justify-center">
                             <img 
                               src="/lovable-uploads/9c690c92-d62f-4d6e-b01e-70d4e13bb9ad.png" 
@@ -223,7 +218,7 @@ const Index = () => (
                       ) : (
                         <IconComponent className="w-8 h-8 text-gray-600 group-hover:text-techBlue-light transition-colors duration-300" />
                       )}
-                        {client.name !== "Evite" && client.name !== "McCourt Global" && client.name !== "BeClear" && client.name !== "Real Defense" && client.name !== "StyleRow" && client.name !== "Resilia" && client.name !== "TigerText" && (
+                        {client.name !== "Evite" && client.name !== "McCourt Global" && client.name !== "BeClear" && client.name !== "Real Defense" && client.name !== "StyleRow" && client.name !== "Resilia" && client.name !== "TigerText" && client.name !== "AT&T Interactive" && (
                           <span className="text-sm text-gray-700 group-hover:text-black font-medium">
                             {client.name}
                           </span>
