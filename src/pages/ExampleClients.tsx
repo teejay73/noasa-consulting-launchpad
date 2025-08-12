@@ -72,6 +72,8 @@ const ExampleClients = () => {
                     "Led product architecture and feature design for a real-time, AI-driven coaching experience.",
                     "Provided strategic guidance on go-to-market positioning, business model, and investor readiness."
                   ]}
+                  variant="beClear"
+                  logoUrl="/lovable-uploads/77b3a80f-7b00-45a0-8f55-cf0e389001e4.png"
                 />
                 <WorkCard
                   company="McCourt Global (Amplica Labs)"
