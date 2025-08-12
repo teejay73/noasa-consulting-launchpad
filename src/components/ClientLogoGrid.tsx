@@ -83,7 +83,7 @@ const ResiliaLogo = () => (
     <img 
       src="/lovable-uploads/6b29020c-fe63-49f6-8c80-133632208d80.png" 
       alt="Resilia" 
-      className="h-6 w-auto"
+      className="h-6 w-auto scale-x-[1.2]"
     />
   </div>
 );
@@ -110,7 +110,7 @@ const ClientLogoGrid = () => (
               <span className="font-bold text-md text-gray-500 select-none">{client.name.split(" ").map(w => w[0]).join("")}</span>
             )}
           </div>
-          {client.name !== "Evite" && client.name !== "McCourt Global" && client.name !== "BeClear" && client.name !== "Real Defense" && client.name !== "StyleRow" && (
+          {client.name !== "Evite" && client.name !== "McCourt Global" && client.name !== "BeClear" && client.name !== "Real Defense" && client.name !== "StyleRow" && client.name !== "Resilia" && (
             <span className="text-[13px] text-gray-500">{client.name}</span>
           )}
         </div>
