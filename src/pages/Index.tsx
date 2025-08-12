@@ -169,15 +169,15 @@ const Index = () => (
                             <img 
                               src="/lovable-uploads/b8b28767-6fcf-4f73-9936-6bb9e8e68d70.png" 
                               alt="StyleRow" 
-                               className="h-10 w-auto scale-[2.4]"
+                               className="h-10 w-auto scale-[3.6]"
                             />
                           </div>
                          ) : client.name === "AT&T Interactive" ? (
-                           <div className="w-24 h-8 flex items-center justify-center">
+                           <div className="w-16 h-16 flex items-center justify-center">
                              <img 
                                src="/lovable-uploads/fb347e80-c9ad-4d82-9563-7f99476672cf.png" 
                                alt="AT&T Interactive" 
-                               className="h-6 w-auto"
+                               className="h-12 w-auto"
                              />
                            </div>
                          ) : client.name === "McCourt Global" ? (
@@ -189,7 +189,7 @@ const Index = () => (
                             />
                           </div>
                         ) : client.name === "Resilia" ? (
-                          <div className="w-16 h-8 flex items-center justify-center">
+                          <div className="w-16 h-16 flex items-center justify-center">
                             <img 
                               src="/lovable-uploads/6b29020c-fe63-49f6-8c80-133632208d80.png" 
                               alt="Resilia" 
@@ -209,7 +209,7 @@ const Index = () => (
                              <img 
                                src="/lovable-uploads/3eb07ce8-7494-49e1-bc5e-3ef33c980f5e.png" 
                                alt="TigerConnect" 
-                               className="h-10 w-auto"
+                               className="h-10 w-auto scale-[2]"
                              />
                            </div>
                          ) : (
