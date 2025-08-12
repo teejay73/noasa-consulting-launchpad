@@ -190,7 +190,7 @@ const Index = () => (
                             <img 
                               src="/lovable-uploads/9c690c92-d62f-4d6e-b01e-70d4e13bb9ad.png" 
                               alt="McCourt Global" 
-                              className="h-10 w-auto"
+                              className="h-10 w-auto scale-[2]"
                             />
                           </div>
                         ) : client.name === "Resilia" ? (
