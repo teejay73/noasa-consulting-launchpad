@@ -3,7 +3,7 @@ import React from "react";
 
 const CLIENTS_DATA = [
   { name: "Real Defense", hasLogo: true },
-  { name: "StyleRow", hasLogo: false },
+  { name: "StyleRow", hasLogo: true },
   { name: "BeClear", hasLogo: true },
   { name: "McCourt Global", hasLogo: true },
   { name: "Resilia", hasLogo: false },
@@ -68,6 +68,16 @@ const RealDefenseLogo = () => (
   </div>
 );
 
+const StyleRowLogo = () => (
+  <div className="w-16 h-16 flex items-center justify-center">
+    <img 
+      src="/lovable-uploads/b8b28767-6fcf-4f73-9936-6bb9e8e68d70.png" 
+      alt="StyleRow" 
+      className="h-10 w-auto"
+    />
+  </div>
+);
+
 const ClientLogoGrid = () => (
   <div className="flex w-full overflow-x-auto py-2">
     <div className="flex gap-8 min-w-[680px] md:min-w-[850px] mx-auto">
@@ -80,6 +90,7 @@ const ClientLogoGrid = () => (
             {client.hasLogo ? (
               client.name === "BeClear" ? <BeClearLogo /> :
               client.name === "Real Defense" ? <RealDefenseLogo /> :
+              client.name === "StyleRow" ? <StyleRowLogo /> :
               client.name === "AT&T Interactive" ? <ATTLogo /> :
               client.name === "McCourt Global" ? <McCourtLogo /> :
               client.name === "Evite" ? <EviteLogo /> :
@@ -88,7 +99,7 @@ const ClientLogoGrid = () => (
               <span className="font-bold text-md text-gray-500 select-none">{client.name.split(" ").map(w => w[0]).join("")}</span>
             )}
           </div>
-          {client.name !== "Evite" && client.name !== "McCourt Global" && client.name !== "BeClear" && client.name !== "Real Defense" && (
+          {client.name !== "Evite" && client.name !== "McCourt Global" && client.name !== "BeClear" && client.name !== "Real Defense" && client.name !== "StyleRow" && (
             <span className="text-[13px] text-gray-500">{client.name}</span>
           )}
         </div>

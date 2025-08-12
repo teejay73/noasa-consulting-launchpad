@@ -132,7 +132,7 @@ const Index = () => (
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
               {[
                 { name: "Real Defense", icon: Shield, hasLogo: true },
-                { name: "StyleRow", icon: Ruler, hasLogo: false },
+                { name: "StyleRow", icon: Ruler, hasLogo: true },
                 { name: "BeClear", icon: Brain, hasLogo: true },
                 { name: "McCourt Global", icon: Building, hasLogo: true },
                 { name: "Resilia", icon: Rocket, hasLogo: true },
@@ -162,6 +162,14 @@ const Index = () => (
                               src="/lovable-uploads/f65f9ab9-718c-48b6-a2cf-d9f3adcc99da.png" 
                               alt="Real Defense" 
                               className="h-10 w-auto scale-[2.1]"
+                            />
+                          </div>
+                        ) : client.name === "StyleRow" ? (
+                          <div className="w-16 h-16 flex items-center justify-center">
+                            <img 
+                              src="/lovable-uploads/b8b28767-6fcf-4f73-9936-6bb9e8e68d70.png" 
+                              alt="StyleRow" 
+                              className="h-10 w-auto"
                             />
                           </div>
                         ) : client.name === "AT&T Interactive" ? (
@@ -207,7 +215,7 @@ const Index = () => (
                       ) : (
                         <IconComponent className="w-8 h-8 text-gray-600 group-hover:text-techBlue-light transition-colors duration-300" />
                       )}
-                       {client.name !== "Evite" && client.name !== "McCourt Global" && client.name !== "BeClear" && client.name !== "Real Defense" && (
+                       {client.name !== "Evite" && client.name !== "McCourt Global" && client.name !== "BeClear" && client.name !== "Real Defense" && client.name !== "StyleRow" && (
                          <span className="text-sm text-gray-700 group-hover:text-black font-medium">
                            {client.name}
                          </span>
