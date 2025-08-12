@@ -136,7 +136,7 @@ const Index = () => (
                 { name: "BeClear", icon: Brain, hasLogo: true },
                 { name: "McCourt Global", icon: Building, hasLogo: true },
                 { name: "Resilia", icon: Rocket, hasLogo: true },
-                { name: "TigerText", icon: Zap, hasLogo: false },
+                { name: "TigerText", icon: Zap, hasLogo: true },
                 { name: "AT&T Interactive", icon: Target, hasLogo: true },
                 { name: "Evite", icon: Users, hasLogo: true }
               ].map((client, index) => {
@@ -198,28 +198,36 @@ const Index = () => (
                             <img 
                               src="/lovable-uploads/6b29020c-fe63-49f6-8c80-133632208d80.png" 
                               alt="Resilia" 
-                              className="h-6 w-auto"
+                              className="h-6 w-auto scale-x-[1.2]"
                             />
                           </div>
-                        ) : client.name === "Evite" ? (
-                          <div className="w-16 h-16 flex items-center justify-center">
-                            <img 
-                              src="/lovable-uploads/7d3bdd8b-649d-438f-a757-5cc7761d53d2.png" 
-                              alt="Evite" 
-                              className="h-12 w-auto"
-                            />
-                          </div>
-                        ) : (
-                           <IconComponent className="w-8 h-8 text-gray-600 group-hover:text-techBlue-light transition-colors duration-300" />
-                        )
+                         ) : client.name === "Evite" ? (
+                           <div className="w-16 h-16 flex items-center justify-center">
+                             <img 
+                               src="/lovable-uploads/5cfcc3aa-f319-4573-8a96-7f8b6762c83c.png" 
+                               alt="Evite" 
+                               className="h-12 w-auto"
+                             />
+                           </div>
+                         ) : client.name === "TigerText" ? (
+                           <div className="w-16 h-16 flex items-center justify-center">
+                             <img 
+                               src="/lovable-uploads/3eb07ce8-7494-49e1-bc5e-3ef33c980f5e.png" 
+                               alt="TigerConnect" 
+                               className="h-10 w-auto"
+                             />
+                           </div>
+                         ) : (
+                            <IconComponent className="w-8 h-8 text-gray-600 group-hover:text-techBlue-light transition-colors duration-300" />
+                         )
                       ) : (
                         <IconComponent className="w-8 h-8 text-gray-600 group-hover:text-techBlue-light transition-colors duration-300" />
                       )}
-                       {client.name !== "Evite" && client.name !== "McCourt Global" && client.name !== "BeClear" && client.name !== "Real Defense" && client.name !== "StyleRow" && (
-                         <span className="text-sm text-gray-700 group-hover:text-black font-medium">
-                           {client.name}
-                         </span>
-                       )}
+                        {client.name !== "Evite" && client.name !== "McCourt Global" && client.name !== "BeClear" && client.name !== "Real Defense" && client.name !== "StyleRow" && client.name !== "Resilia" && client.name !== "TigerText" && (
+                          <span className="text-sm text-gray-700 group-hover:text-black font-medium">
+                            {client.name}
+                          </span>
+                        )}
                     </div>
                   </div>
                 );
