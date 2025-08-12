@@ -84,6 +84,8 @@ const ExampleClients = () => {
                     "Designed and launched blockchain-based fan engagement platforms with Olympique de Marseille and Monaco Grand Prix, achieving 20%+ conversion and 91% retention.",
                     "Secured board-level investment by presenting vision and commercial strategy for multiple Web3 applications."
                   ]}
+                  variant="beClear"
+                  logoUrl="/lovable-uploads/9c690c92-d62f-4d6e-b01e-70d4e13bb9ad.png"
                 />
                 <WorkCard
                   company="Resilia"
