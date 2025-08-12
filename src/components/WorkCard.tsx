@@ -1,5 +1,6 @@
 
 import React from "react";
+import PastClientTile from "./PastClientTile";
 
 interface WorkCardProps {
   company: string;
@@ -8,16 +9,23 @@ interface WorkCardProps {
   logoUrl?: string;
   logoClassName?: string;
   variant?: 'default' | 'beClear';
+  tileName?: 'BeClear' | 'McCourt Global' | 'Resilia' | 'StyleRow' | 'Real Defense';
 }
 
-const WorkCard: React.FC<WorkCardProps> = ({ company, subtitle, bullets, logoUrl, logoClassName, variant = 'default' }) => {
-  const containerClass = `relative bg-cardBg border border-white/10 hover:border-techBlue-light/50 rounded-lg p-6 ${variant === 'beClear' ? 'pt-12' : ''} h-full flex flex-col transition-all duration-300 hover:transform hover:scale-105 hover:shadow-[0_10px_40px_rgba(47,128,237,0.2)] group`;
-
+const WorkCard: React.FC<WorkCardProps> = ({ company, subtitle, bullets, logoUrl, logoClassName, variant = 'default', tileName }) => {
+  const topPadding = tileName ? 'pt-20' : (variant === 'beClear' ? 'pt-12' : '');
+  const containerClass = `relative bg-cardBg border border-white/10 hover:border-techBlue-light/50 rounded-lg p-6 ${topPadding} h-full flex flex-col transition-all duration-300 hover:transform hover:scale-105 hover:shadow-[0_10px_40px_rgba(47,128,237,0.2)] group`;
   return (
     <div className={containerClass}>
       {variant === 'beClear' && logoUrl && (
         <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-white rounded-xl px-6 py-3 shadow-md border border-white/20">
           <img src={logoUrl} alt={`${company} logo`} className={`h-8 w-auto ${logoClassName || ''}`} loading="lazy" />
+        </div>
+      )}
+
+      {tileName && (
+        <div className="absolute -top-6 left-1/2 -translate-x-1/2">
+          <PastClientTile name={tileName} />
         </div>
       )}
 

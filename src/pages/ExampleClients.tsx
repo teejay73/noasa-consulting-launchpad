@@ -54,6 +54,7 @@ const ExampleClients = () => {
                     "Designed and launched a self-service customer dashboard for subscription and account management.",
                     "Introduced prioritization frameworks to align cross-functional teams and accelerate delivery velocity."
                   ]}
+                  tileName="Real Defense"
                 />
                 <WorkCard
                   company="StyleRow"
@@ -63,6 +64,7 @@ const ExampleClients = () => {
                     "Acted as Head of Product to define, build, and launch a new transaction management platform for agents.",
                     "Led product strategy, roadmap planning, and execution of the v1 release with a top-tier launch partner."
                   ]}
+                  tileName="StyleRow"
                 />
                 <WorkCard
                   company="BeClear"
@@ -72,8 +74,7 @@ const ExampleClients = () => {
                     "Led product architecture and feature design for a real-time, AI-driven coaching experience.",
                     "Provided strategic guidance on go-to-market positioning, business model, and investor readiness."
                   ]}
-                  variant="beClear"
-                  logoUrl="/lovable-uploads/77b3a80f-7b00-45a0-8f55-cf0e389001e4.png"
+                  tileName="BeClear"
                 />
                 <WorkCard
                   company="McCourt Global (Amplica Labs)"
@@ -84,8 +85,7 @@ const ExampleClients = () => {
                     "Designed and launched blockchain-based fan engagement platforms with Olympique de Marseille and Monaco Grand Prix, achieving 20%+ conversion and 91% retention.",
                     "Secured board-level investment by presenting vision and commercial strategy for multiple Web3 applications."
                   ]}
-                  variant="beClear"
-                  logoUrl="/lovable-uploads/9c690c92-d62f-4d6e-b01e-70d4e13bb9ad.png"
+                  tileName="McCourt Global"
                 />
                 <WorkCard
                   company="Resilia"
@@ -95,9 +95,7 @@ const ExampleClients = () => {
                     "Redesigned Resilia's enterprise nonprofit platform to support scalable impact reporting for grantmakers.",
                     "Translated business vision into a clear, actionable roadmap and helped recruit long-term product leadership."
                   ]}
-                  variant="beClear"
-                  logoUrl="/lovable-uploads/6b29020c-fe63-49f6-8c80-133632208d80.png"
-                  logoClassName="scale-x-[1.2]"
+                  tileName="Resilia"
                 />
               </div>
             </div>
