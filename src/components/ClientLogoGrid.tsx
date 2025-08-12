@@ -6,7 +6,7 @@ const CLIENTS_DATA = [
   { name: "StyleRow", hasLogo: true },
   { name: "BeClear", hasLogo: true },
   { name: "McCourt Global", hasLogo: true },
-  { name: "Resilia", hasLogo: false },
+  { name: "Resilia", hasLogo: true },
   { name: "Tigertext", hasLogo: false },
   { name: "AT&T Interactive", hasLogo: true },
   { name: "Evite", hasLogo: true },
@@ -78,6 +78,16 @@ const StyleRowLogo = () => (
   </div>
 );
 
+const ResiliaLogo = () => (
+  <div className="w-16 h-16 flex items-center justify-center">
+    <img 
+      src="/lovable-uploads/6b29020c-fe63-49f6-8c80-133632208d80.png" 
+      alt="Resilia" 
+      className="h-6 w-auto"
+    />
+  </div>
+);
+
 const ClientLogoGrid = () => (
   <div className="flex w-full overflow-x-auto py-2">
     <div className="flex gap-8 min-w-[680px] md:min-w-[850px] mx-auto">
@@ -93,6 +103,7 @@ const ClientLogoGrid = () => (
               client.name === "StyleRow" ? <StyleRowLogo /> :
               client.name === "AT&T Interactive" ? <ATTLogo /> :
               client.name === "McCourt Global" ? <McCourtLogo /> :
+              client.name === "Resilia" ? <ResiliaLogo /> :
               client.name === "Evite" ? <EviteLogo /> :
               <span className="font-bold text-md text-gray-500 select-none">{client.name.split(" ").map(w => w[0]).join("")}</span>
             ) : (

@@ -196,7 +196,7 @@ const Index = () => (
                         ) : client.name === "Resilia" ? (
                           <div className="w-16 h-8 flex items-center justify-center">
                             <img 
-                              src="/lovable-uploads/9e13c6a3-da6c-48ae-8eeb-3661309174f8.png" 
+                              src="/lovable-uploads/6b29020c-fe63-49f6-8c80-133632208d80.png" 
                               alt="Resilia" 
                               className="h-6 w-auto"
                             />
