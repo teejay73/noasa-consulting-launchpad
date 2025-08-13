@@ -49,10 +49,9 @@ const ExampleClients = () => {
                   company="Real Defense"
                   subtitle="Product Strategy & Leadership for Growth-Stage Consumer SaaS"
                   bullets={[
-                    "Partnered with this $50MM+ ARR company to drive multiple product initiatives across the customer care, BI, and eCommerce teams.",
+                    "Worked with this $50MM+ ARR company to drive multiple product initiatives across customer care, BI, and eCommerce.",
                     "Delivered a new internal call center platform that reduced agent handle time by 20% and increased average order value by 17%.",
-                    "Designed and launched a self-service customer dashboard for subscription and account management.",
-                    "Introduced prioritization frameworks to align cross-functional teams and accelerate delivery velocity."
+                    "Designed and launched a self-service customer dashboard for subscription and account management, and introduced prioritization frameworks to align cross-functional teams and accelerate delivery velocity."
                   ]}
                   tileName="Real Defense"
                 />
@@ -61,8 +60,8 @@ const ExampleClients = () => {
                   subtitle="End-to-End Product Ownership for New Market Expansion"
                   bullets={[
                     "Collaborated with the CEO and CRO of this $11MM+ Series A startup to expand into the real estate vertical.",
-                    "Acted as Head of Product to define, build, and launch a new transaction management platform for agents.",
-                    "Led product strategy, roadmap planning, and execution of the v1 release with a top-tier launch partner."
+                    "Acted as Head of Product to define, build, and launch a new transaction management platform for real estate agents.",
+                    "While responsible for product strategy and roadmap planning, the primary focus was on hands-on execution—writing detailed requirements, defining the development roadmap, working side-by-side with engineering to scope work and set priorities, and directly project managing the v1 build through to launch with a top-tier partner."
                   ]}
                   tileName="StyleRow"
                 />
@@ -70,20 +69,20 @@ const ExampleClients = () => {
                   company="BeClear"
                   subtitle="AI-Powered Platform Design for Executive Coaching Startup"
                   bullets={[
-                    "Co-created the product foundation for this pre-seed B2B2C leadership development platform.",
-                    "Led product architecture and feature design for a real-time, AI-driven coaching experience.",
-                    "Provided strategic guidance on go-to-market positioning, business model, and investor readiness."
+                    "Co-created the product foundation for this pre-seed funded B2B2C leadership development platform.",
+                    "Led product architecture and feature design for a real-time AI-driven coaching experience.",
+                    "Translated the founder’s vision into detailed requirements and development priorities, while also shaping go-to-market positioning, business model, and investor readiness."
                   ]}
                   tileName="BeClear"
                 />
                 <WorkCard
-                  company="McCourt Global (Amplica Labs)"
+                  company="McCourt"
                   subtitle="Product and Operations Leadership for Web3 Innovation Group"
                   bullets={[
-                    "Led product strategy and operations for a global digital transformation initiative backed by McCourt Global.",
+                    "Led product strategy and operations for the commercial initiatives of McCourt Global’s technology division, focused on developing blockchain-based fan engagement platforms.",
                     "Built and managed a 25-person international team across product, engineering, and marketing.",
-                    "Designed and launched blockchain-based fan engagement platforms with Olympique de Marseille and Monaco Grand Prix, achieving 20%+ conversion and 91% retention.",
-                    "Secured board-level investment by presenting vision and commercial strategy for multiple Web3 applications."
+                    "Designed and launched platforms with Olympique de Marseille and Monaco Grand Prix, achieving a 91% retention rate, an NPS of 49, and industry-leading engagement metrics.",
+                    "Secured board-level investment by presenting the vision and commercial strategy for multiple Web3 applications."
                   ]}
                   tileName="McCourt Global"
                 />
