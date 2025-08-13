@@ -11,22 +11,22 @@ const capabilities = [
   {
     title: "Cross-Functional Team Orchestration",
     icon: Target,
-    description: "Aligning product, design, engineering, and business stakeholders around shared outcomes."
+    description: "Driving alignment across product, design, engineering, and business teams to deliver on feature scope, GTM plans, and KPI targets.."
   },
   {
     title: "Customer-Centered Platform Design",
     icon: Heart,
-    description: "Building intuitive, scalable products rooted in real user needs and behavior."
+    description: "Using Customer Development methodologies to create intuitive, scalable products grounded in real user needs and behavior."
   },
   {
     title: "Data-Driven Prioritization & Operations",
     icon: BarChart3,
-    description: "Using metrics, insights, and structured workflows to focus teams and accelerate delivery."
+    description: "Using metrics, insights, and structured workflows to focus teams, accelerate delivery, and iterate based on results, anchored by clear success metrics and KPIs."
   },
   {
     title: "0→1 and 1→10 Product Development",
     icon: Rocket,
-    description: "Guiding products from concept to MVP, and from MVP to real market traction, growth and scaling."
+    description: "Guiding products from concept to MVP, through product-market fit, and into real market traction, growth, and scale."
   },
   {
     title: "AI & Emerging Tech Integration",
@@ -41,7 +41,7 @@ const capabilities = [
   {
     title: "Enterprise Readiness & Scaling",
     icon: Building2,
-    description: "Preparing products and teams for the next stage: scale, complexity, compliance, and growth."
+    description: "Preparing products and teams for the next stage, scale, complexity, compliance, and growth."
   },
   {
     title: "Executive-Level Strategy & Communication",
