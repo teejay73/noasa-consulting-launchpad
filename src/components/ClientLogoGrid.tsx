@@ -25,16 +25,11 @@ const BeClearLogo = () => (
 
 const ATTLogo = () => (
   <div className="w-14 h-8 flex items-center justify-center">
-    <div className="flex items-center gap-1">
-      <div className="w-6 h-6 rounded-full bg-gradient-to-br from-[#00A8CC] to-[#0078A0] flex items-center justify-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#00A8CC] to-[#0078A0]"></div>
-        <div className="absolute inset-[2px] bg-white rounded-full"></div>
-        <div className="absolute inset-[3px] bg-gradient-to-br from-[#00A8CC] to-[#0078A0] rounded-full"></div>
-        <div className="absolute inset-[4px] bg-white rounded-full"></div>
-        <div className="absolute inset-[5px] bg-gradient-to-br from-[#00A8CC] to-[#0078A0] rounded-full"></div>
-      </div>
-      <span className="text-black font-bold text-sm">AT&T</span>
-    </div>
+    <img 
+      src="/lovable-uploads/f26c34ac-9609-417d-9703-d1832e3ceb70.png" 
+      alt="AT&T" 
+      className="h-6 w-auto object-contain"
+    />
   </div>
 );
 
