@@ -167,7 +167,7 @@ const Index = () => (
                          ) : client.name === "StyleRow" ? (
                           <div className="w-16 h-16 flex items-center justify-center">
                             <img 
-                              src="/lovable-uploads/stylerow-trimmed.png" 
+                              src="/lovable-uploads/aa6b142e-8a72-4a95-a0b6-5a5efd8530e8.png" 
                               alt="StyleRow" 
                               className="h-12 w-auto object-contain"
                             />
