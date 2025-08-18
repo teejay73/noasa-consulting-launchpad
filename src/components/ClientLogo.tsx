@@ -60,7 +60,7 @@ const ClientLogo = ({ name, className = "", containerClassName = "" }: ClientLog
           <img 
             src="/lovable-uploads/9c690c92-d62f-4d6e-b01e-70d4e13bb9ad.png" 
             alt="McCourt Global" 
-            className={`h-6 w-auto scale-[2] ${className}`}
+            className={`h-6 w-auto scale-[3] ${className}`}
           />
         );
       
