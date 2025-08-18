@@ -33,7 +33,7 @@ const ClientLogo = ({ name, className = "", containerClassName = "" }: ClientLog
           <img 
             src="/lovable-uploads/f65f9ab9-718c-48b6-a2cf-d9f3adcc99da.png" 
             alt="Real Defense" 
-            className={`h-10 w-auto scale-y-[1.68] scale-x-[1.932] ${className}`}
+            className={`h-10 w-auto scale-y-[2.02] scale-x-[2.32] ${className}`}
           />
         );
       
