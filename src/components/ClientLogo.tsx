@@ -42,7 +42,7 @@ const ClientLogo = ({ name, className = "", containerClassName = "" }: ClientLog
           <img 
             src="/lovable-uploads/e31ee190-81cc-4b57-a41b-f278f6d7af09.png" 
             alt="StyleRow" 
-            className={`h-12 w-auto object-contain ${className}`}
+            className={`h-12 w-auto object-contain scale-[1.5] ${className}`}
           />
         );
       
