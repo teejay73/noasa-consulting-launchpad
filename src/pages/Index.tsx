@@ -196,14 +196,6 @@ const Index = () => (
                                className="h-12 w-auto"
                              />
                            </div>
-                         ) : client.name === "TigerText" ? (
-                           <div className="w-16 h-16 flex items-center justify-center">
-                             <img 
-                               src="/lovable-uploads/3eb07ce8-7494-49e1-bc5e-3ef33c980f5e.png" 
-                               alt="TigerConnect" 
-                               className="h-10 w-auto scale-[2]"
-                             />
-                           </div>
                          ) : (
                             <IconComponent className="w-8 h-8 text-gray-600 group-hover:text-techBlue-light transition-colors duration-300" />
                          )
