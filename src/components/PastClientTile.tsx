@@ -31,9 +31,9 @@ const PastClientTile: React.FC<PastClientTileProps> = ({ name, className = "" })
       {name === "StyleRow" && (
         <div className="w-16 h-16 flex items-center justify-center overflow-hidden">
           <img
-            src="/lovable-uploads/662bb433-9e65-4f41-8094-2340143e7f8b.png"
+            src="/lovable-uploads/142a65d7-3e14-4eda-9818-6c3cf5a34cb6.png"
             alt="StyleRow logo"
-            className="w-16 h-auto origin-center scale-[2]"
+            className="w-16 h-auto"
             loading="lazy"
           />
         </div>
