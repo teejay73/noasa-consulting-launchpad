@@ -164,14 +164,6 @@ const Index = () => (
                               className="h-10 w-auto scale-y-[2.1] scale-x-[2.415]"
                             />
                           </div>
-                         ) : client.name === "StyleRow" ? (
-                          <div className="w-16 h-16 flex items-center justify-center">
-                            <img 
-                              src="/lovable-uploads/db1aab70-8204-4628-885e-2d8f9622b4db.png" 
-                              alt="StyleRow" 
-                              className="h-[4.8rem] w-auto object-contain"
-                            />
-                          </div>
                          ) : client.name === "AT&T Interactive" ? (
                            <div className="w-16 h-16 flex items-center justify-center">
                              <img 
