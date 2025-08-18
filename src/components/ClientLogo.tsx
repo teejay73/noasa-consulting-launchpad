@@ -33,7 +33,7 @@ const ClientLogo = ({ name, className = "", containerClassName = "" }: ClientLog
           <img 
             src="/lovable-uploads/f65f9ab9-718c-48b6-a2cf-d9f3adcc99da.png" 
             alt="Real Defense" 
-            className={`h-10 w-auto scale-y-[2.1] scale-x-[2.415] ${className}`}
+            className={`h-10 w-auto scale-y-[1.68] scale-x-[1.932] ${className}`}
           />
         );
       
@@ -69,7 +69,7 @@ const ClientLogo = ({ name, className = "", containerClassName = "" }: ClientLog
           <img 
             src="/lovable-uploads/6b29020c-fe63-49f6-8c80-133632208d80.png" 
             alt="Resilia" 
-            className={`h-6 w-auto scale-x-[1.2] ${className}`}
+            className={`h-6 w-auto scale-x-[1.08] ${className}`}
           />
         );
       
@@ -78,7 +78,7 @@ const ClientLogo = ({ name, className = "", containerClassName = "" }: ClientLog
           <img 
             src="/lovable-uploads/3eb07ce8-7494-49e1-bc5e-3ef33c980f5e.png" 
             alt="TigerText" 
-            className={`h-10 w-auto ${className}`}
+            className={`h-10 w-auto scale-[1.2] ${className}`}
           />
         );
       
