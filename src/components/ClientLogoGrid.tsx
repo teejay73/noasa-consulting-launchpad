@@ -26,7 +26,7 @@ const BeClearLogo = () => (
 const ATTLogo = () => (
   <div className="w-14 h-8 flex items-center justify-center">
     <img 
-      src="/lovable-uploads/f26c34ac-9609-417d-9703-d1832e3ceb70.png" 
+      src="/lovable-uploads/8f054358-ab6d-4d3a-ac7f-1eb9c28c276d.png" 
       alt="AT&T" 
       className="h-6 w-auto object-contain"
     />
