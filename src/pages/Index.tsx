@@ -169,7 +169,7 @@ const Index = () => (
                             <img 
                               src="/lovable-uploads/aa6b142e-8a72-4a95-a0b6-5a5efd8530e8.png" 
                               alt="StyleRow" 
-                              className="h-12 w-auto object-contain"
+                              className="h-[4.8rem] w-auto object-contain"
                             />
                           </div>
                          ) : client.name === "AT&T Interactive" ? (
