@@ -3,6 +3,7 @@ import React from "react";
 import Header from "../components/Header";
 import FadeInSection from "../components/FadeInSection";
 import CapabilitiesGrid from "../components/CapabilitiesGrid";
+import ClientLogo, { ClientName } from "../components/ClientLogo";
 import { Shield, Ruler, Brain, CheckCircle, Zap, Target, Users, Rocket, Building } from "lucide-react";
 
 const Index = () => (
@@ -131,14 +132,14 @@ const Index = () => (
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
               {[
-                { name: "Real Defense", icon: Shield, hasLogo: true },
-                { name: "StyleRow", icon: Ruler, hasLogo: true },
-                { name: "BeClear", icon: Brain, hasLogo: true },
-                { name: "McCourt Global", icon: Building, hasLogo: true },
-                { name: "Resilia", icon: Rocket, hasLogo: true },
-                { name: "TigerText", icon: Zap, hasLogo: true },
-                { name: "AT&T Interactive", icon: Target, hasLogo: true },
-                { name: "Evite", icon: Users, hasLogo: true }
+                { name: "Real Defense" as ClientName, icon: Shield, hasLogo: true },
+                { name: "StyleRow" as ClientName, icon: Ruler, hasLogo: true },
+                { name: "BeClear" as ClientName, icon: Brain, hasLogo: true },
+                { name: "McCourt Global" as ClientName, icon: Building, hasLogo: true },
+                { name: "Resilia" as ClientName, icon: Rocket, hasLogo: true },
+                { name: "TigerText" as ClientName, icon: Zap, hasLogo: true },
+                { name: "AT&T Interactive" as ClientName, icon: Target, hasLogo: true },
+                { name: "Evite" as ClientName, icon: Users, hasLogo: true }
               ].map((client, index) => {
                 const IconComponent = client.icon;
                 return (
@@ -148,57 +149,10 @@ const Index = () => (
                   >
                     <div className="flex flex-col items-center gap-3 p-4 rounded-lg bg-white border border-gray-200 group-hover:border-techBlue-light/30 group-hover:shadow-[0_0_20px_rgba(86,204,242,0.2)] transition-all duration-300">
                       {client.hasLogo ? (
-                        client.name === "BeClear" ? (
-                          <div className="w-16 h-16 flex items-center justify-center">
-                            <img 
-                              src="/lovable-uploads/77b3a80f-7b00-45a0-8f55-cf0e389001e4.png" 
-                              alt="BeClear" 
-                              className="h-16 w-auto"
-                            />
-                          </div>
-                        ) : client.name === "Real Defense" ? (
-                          <div className="w-16 h-16 flex items-center justify-center">
-                            <img 
-                              src="/lovable-uploads/f65f9ab9-718c-48b6-a2cf-d9f3adcc99da.png" 
-                              alt="Real Defense" 
-                              className="h-10 w-auto scale-y-[2.1] scale-x-[2.415]"
-                            />
-                          </div>
-                         ) : client.name === "McCourt Global" ? (
-                          <div className="w-16 h-16 flex items-center justify-center">
-                            <img 
-                              src="/lovable-uploads/9c690c92-d62f-4d6e-b01e-70d4e13bb9ad.png" 
-                              alt="McCourt Global" 
-                              className="h-10 w-auto scale-[2]"
-                            />
-                          </div>
-                        ) : client.name === "Resilia" ? (
-                          <div className="w-16 h-16 flex items-center justify-center">
-                            <img 
-                              src="/lovable-uploads/6b29020c-fe63-49f6-8c80-133632208d80.png" 
-                              alt="Resilia" 
-                              className="h-6 w-auto scale-x-[1.2]"
-                            />
-                          </div>
-                         ) : client.name === "Evite" ? (
-                           <div className="w-16 h-16 flex items-center justify-center">
-                             <img 
-                               src="/lovable-uploads/5cfcc3aa-f319-4573-8a96-7f8b6762c83c.png" 
-                               alt="Evite" 
-                               className="h-12 w-auto"
-                             />
-                           </div>
-                         ) : (
-                            <IconComponent className="w-8 h-8 text-gray-600 group-hover:text-techBlue-light transition-colors duration-300" />
-                         )
+                        <ClientLogo name={client.name} />
                       ) : (
                         <IconComponent className="w-8 h-8 text-gray-600 group-hover:text-techBlue-light transition-colors duration-300" />
                       )}
-                        {client.name !== "Evite" && client.name !== "McCourt Global" && client.name !== "BeClear" && client.name !== "Real Defense" && client.name !== "StyleRow" && client.name !== "Resilia" && client.name !== "TigerText" && client.name !== "AT&T Interactive" && (
-                          <span className="text-sm text-gray-700 group-hover:text-black font-medium">
-                            {client.name}
-                          </span>
-                        )}
                     </div>
                   </div>
                 );
