@@ -51,7 +51,7 @@ const McCourtLogo = () => (
 const EviteLogo = () => (
   <div className="w-12 h-8 flex items-center justify-center">
     <img 
-      src="/lovable-uploads/ebfbf813-df11-4174-94c9-0ae03fdbc85c.png" 
+      src="/lovable-uploads/7bfc9c21-7a93-4fec-8d9f-a768b0b3c9fb.png" 
       alt="Evite" 
       className="h-6 w-auto"
     />
