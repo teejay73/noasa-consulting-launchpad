@@ -51,7 +51,7 @@ const ClientLogo = ({ name, className = "", containerClassName = "" }: ClientLog
           <img 
             src="/lovable-uploads/8f054358-ab6d-4d3a-ac7f-1eb9c28c276d.png" 
             alt="AT&T Interactive" 
-            className={`h-6 w-auto object-contain ${className}`}
+            className={`h-6 w-auto object-contain scale-[1.25] ${className}`}
           />
         );
       
