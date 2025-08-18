@@ -164,14 +164,6 @@ const Index = () => (
                               className="h-10 w-auto scale-y-[2.1] scale-x-[2.415]"
                             />
                           </div>
-                         ) : client.name === "AT&T Interactive" ? (
-                           <div className="w-16 h-16 flex items-center justify-center">
-                             <img 
-                               src="/lovable-uploads/fb347e80-c9ad-4d82-9563-7f99476672cf.png" 
-                               alt="AT&T Interactive" 
-                               className="h-12 w-auto"
-                             />
-                           </div>
                          ) : client.name === "McCourt Global" ? (
                           <div className="w-16 h-16 flex items-center justify-center">
                             <img 
