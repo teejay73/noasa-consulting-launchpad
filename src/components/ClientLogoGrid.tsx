@@ -66,7 +66,7 @@ const RealDefenseLogo = () => (
 const StyleRowLogo = () => (
   <div className="w-16 h-16 flex items-center justify-center">
     <img 
-      src="/lovable-uploads/aa6b142e-8a72-4a95-a0b6-5a5efd8530e8.png" 
+      src="/lovable-uploads/db1aab70-8204-4628-885e-2d8f9622b4db.png" 
       alt="StyleRow" 
       className="h-12 w-auto object-contain"
     />
