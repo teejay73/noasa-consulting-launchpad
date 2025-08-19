@@ -23,7 +23,7 @@ const PastClientTile: React.FC<PastClientTileProps> = ({ name, className = "" })
           <img
             src="/lovable-uploads/f65f9ab9-718c-48b6-a2cf-d9f3adcc99da.png"
             alt="Real Defense logo"
-            className="h-10 w-auto scale-y-[2.1] scale-x-[2.415]"
+            className="h-8 w-auto scale-[1.5]"
             loading="lazy"
           />
         </div>
