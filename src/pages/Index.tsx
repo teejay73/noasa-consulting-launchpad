@@ -31,7 +31,7 @@ const Index = () => (
             
             {/* CTA button */}
             <a
-              href="https://calendly.com/teejayt73/30min"
+              href="https://calendar.app.google/QmDsVr3br3PohCUF7"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-techBlue hover:border-neonBlue hover:bg-neonBlue hover:text-deepNavy text-white px-10 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,255,0.6)] uppercase tracking-wider inline-flex items-center gap-3 group"
@@ -192,7 +192,7 @@ const Index = () => (
               "If you're facing complexity, scale, or messy growth—we should talk."
             </div>
             <a
-              href="https://calendly.com/teejayt73/30min"
+              href="https://calendar.app.google/QmDsVr3br3PohCUF7"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-techBlue hover:border-neonBlue hover:bg-neonBlue hover:text-deepNavy text-white px-10 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,255,0.6)] uppercase tracking-wider inline-flex items-center gap-3 group mb-8"
@@ -202,7 +202,7 @@ const Index = () => (
             </a>
             <div className="flex gap-6 justify-center text-sm">
               <a
-                href="https://calendly.com/teejayt73/30min"
+                href="https://calendar.app.google/QmDsVr3br3PohCUF7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-techBlue-light hover:text-neonBlue font-medium transition-all duration-300 hover:underline uppercase tracking-wide"

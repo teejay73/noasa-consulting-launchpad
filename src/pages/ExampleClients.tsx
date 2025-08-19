@@ -112,7 +112,7 @@ const ExampleClients = () => {
                 Let's discuss how we can help accelerate your product strategy and execution.
               </p>
               <a
-                href="https://calendly.com/teejayt73/30min"
+                href="https://calendar.app.google/QmDsVr3br3PohCUF7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center border border-techBlue hover:border-neonBlue hover:bg-neonBlue hover:text-deepNavy text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,255,0.6)] uppercase tracking-wider"
