@@ -61,7 +61,7 @@ const ExampleClients = () => {
                   bullets={[
                     "Collaborated with the CEO and CRO of this $11MM+ Series A startup to expand into the real estate vertical.",
                     "Acted as Head of Product to define, build, and launch a new transaction management platform for real estate agents.",
-                    "While responsible for product strategy and roadmap planning, the primary focus was on hands-on execution—writing detailed requirements, defining the development roadmap, working side-by-side with engineering to scope work and set priorities, and directly project managing the v1 build through to launch with a top-tier partner."
+                    "While responsible for product strategy and roadmap planning, the primary focus was on hands-on execution, writing detailed requirements, defining the development roadmap, working side-by-side with engineering to scope work and set priorities, and directly project managing the v1 build through to launch with a top-tier partner."
                   ]}
                   tileName="StyleRow"
                 />
