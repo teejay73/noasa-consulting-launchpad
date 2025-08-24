@@ -47,7 +47,7 @@ const ExampleClients = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                 <WorkCard
                   company="Real Defense"
-                  subtitle="Product Strategy & Leadership for Growth-Stage Consumer SaaS"
+                  subtitle="Product Lead for Growth-Stage Consumer SaaS"
                   bullets={[
                     "Partnered with this $50MM+ ARR company to lead multiple initiatives across customer care, BI, and eCommerce.",
                     "Delivered a new internal call center platform that reduced agent handle time by 20% and increased average order value by 17%, while integrating AI solutions to streamline support workflows and boost agent efficiency.",
