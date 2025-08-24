@@ -18,7 +18,7 @@ const Index = () => <div className="min-h-screen bg-gradient-to-b from-deepNavy 
           <div className="max-w-5xl mx-auto relative z-10">
             {/* Main headline - Left aligned */}
             <h1 className="font-grotesk font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight mb-8 leading-tight animate-hero-enter text-left">
-              <span className="bg-gradient-to-r from-techBlue-light to-neonBlue bg-clip-text text-transparent">Product</span> <span className="text-techBlue-light">Consulting for</span> <span className="bg-gradient-to-r from-techBlue-light to-neonBlue bg-clip-text text-transparent">Startups</span> <span className="text-white">and</span> <span className="bg-gradient-to-r from-techBlue-light to-neonBlue bg-clip-text text-transparent">Growth-Stage</span> <span className="text-white">Companies</span>
+              <span className="bg-gradient-to-r from-techBlue-light to-neonBlue bg-clip-text text-transparent">Fractional Product</span> <span className="text-techBlue-light">Consulting for</span> <span className="bg-gradient-to-r from-techBlue-light to-neonBlue bg-clip-text text-transparent">Startups</span> <span className="text-white">and</span> <span className="bg-gradient-to-r from-techBlue-light to-neonBlue bg-clip-text text-transparent">Growth-Stage</span> <span className="text-white">Companies</span>
             </h1>
             
             {/* Subheadline - Left aligned, 70% max width */}
@@ -46,7 +46,7 @@ const Index = () => <div className="min-h-screen bg-gradient-to-b from-deepNavy 
               <div className="bg-cardBg rounded-xl p-8 border border-white/10 hover:border-techBlue-light/50 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-[0_10px_40px_rgba(47,128,237,0.2)] group">
                 <div className="flex items-center gap-3 mb-4">
                   <Zap className="w-6 h-6 text-techBlue-light" />
-                  <h3 className="font-grotesk font-semibold text-xl text-white uppercase tracking-wide">How We Work</h3>
+                  <h3 className="font-grotesk font-semibold text-xl text-white uppercase tracking-wide">Working Approach</h3>
                 </div>
                 <ul className="text-techGray-light space-y-2">
                   <li className="flex items-start gap-2">
@@ -68,7 +68,7 @@ const Index = () => <div className="min-h-screen bg-gradient-to-b from-deepNavy 
               <div className="bg-cardBg rounded-xl p-8 border border-white/10 hover:border-techBlue-light/50 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-[0_10px_40px_rgba(47,128,237,0.2)] group">
                 <div className="flex items-center gap-3 mb-4">
                   <Users className="w-6 h-6 text-techBlue-light" />
-                  <h3 className="font-grotesk font-semibold text-xl text-white uppercase tracking-wide">Who We Support</h3>
+                  <h3 className="font-grotesk font-semibold text-xl text-white uppercase tracking-wide">Clients Served</h3>
                 </div>
                 <ul className="text-techGray-light space-y-2">
                   <li className="flex items-start gap-2">
@@ -90,7 +90,7 @@ const Index = () => <div className="min-h-screen bg-gradient-to-b from-deepNavy 
               <div className="bg-cardBg rounded-xl p-8 border border-white/10 hover:border-techBlue-light/50 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-[0_10px_40px_rgba(47,128,237,0.2)] group">
                 <div className="flex items-center gap-3 mb-4">
                   <Target className="w-6 h-6 text-techBlue-light" />
-                  <h3 className="font-grotesk font-semibold text-xl text-white uppercase tracking-wide">How You Can Engage Us</h3>
+                  <h3 className="font-grotesk font-semibold text-xl text-white uppercase tracking-wide">Engagement Models</h3>
                 </div>
                 <ul className="text-techGray-light space-y-2">
                   <li className="flex items-start gap-2">
