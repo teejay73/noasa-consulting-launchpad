@@ -199,15 +199,7 @@ const Index = () => <div className="min-h-screen bg-gradient-to-b from-deepNavy 
               → Book a Discovery Call
               <span className="transition-transform duration-300 group-hover:translate-x-1"></span>
             </a>
-            <div className="flex gap-6 justify-center text-sm">
-              <a href="https://calendar.app.google/QmDsVr3br3PohCUF7" target="_blank" rel="noopener noreferrer" className="text-techBlue-light hover:text-neonBlue font-medium transition-all duration-300 hover:underline uppercase tracking-wide">
-                Schedule Online
-              </a>
-              <span className="text-techGray-light">•</span>
-              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-techBlue-light hover:text-neonBlue font-medium transition-all duration-300 hover:underline uppercase tracking-wide">
-                Connect on LinkedIn
-              </a>
-            </div>
+            
           </div>
         </FadeInSection>
       </section>
