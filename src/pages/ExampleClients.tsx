@@ -80,7 +80,7 @@ const ExampleClients = () => {
                   subtitle="Product and Operations Leadership for Web3 Innovation Group"
                   bullets={[
                     "Led product strategy and operations for the commercial initiatives of McCourt Global’s technology division, focused on developing blockchain-based fan engagement platforms.",
-                    "Built and managed a 25-person international team across product, engineering, and marketing.",
+                    "Built and managed a 20-person international team across product, engineering, and marketing.",
                     "Designed and launched platforms with Olympique de Marseille and Monaco Grand Prix, achieving a 91% retention rate, an NPS of 49, and industry-leading engagement metrics.",
                     "Secured board-level investment by presenting the vision and commercial strategy for multiple Web3 applications."
                   ]}
