@@ -49,7 +49,7 @@ const ExampleClients = () => {
                   company="Real Defense"
                   subtitle="Product Lead for Growth-Stage Consumer SaaS"
                   bullets={[
-                    "Partnered with this $50MM+ ARR company to lead multiple initiatives across customer care, BI, and eCommerce.",
+                    "Leading multiple initiatives across customer care, BI, and eCommerce.",
                     "Delivered a new internal call center platform that reduced agent handle time by 20% and increased average order value by 17%, while integrating AI solutions to streamline support workflows and boost agent efficiency.",
                     "Designed and launched a self-service customer dashboard for subscription and account management, and introduced prioritization frameworks to align cross-functional teams and accelerate delivery velocity."
                   ]}
