@@ -1,13 +1,10 @@
-
 import React from "react";
 import Header from "../components/Header";
 import FadeInSection from "../components/FadeInSection";
 import CapabilitiesGrid from "../components/CapabilitiesGrid";
 import ClientLogo, { ClientName } from "../components/ClientLogo";
 import { Shield, Ruler, Brain, CheckCircle, Zap, Target, Users, Rocket, Building } from "lucide-react";
-
-const Index = () => (
-  <div className="min-h-screen bg-gradient-to-b from-deepNavy to-gradientEnd font-inter text-white">
+const Index = () => <div className="min-h-screen bg-gradient-to-b from-deepNavy to-gradientEnd font-inter text-white">
     <Header />
     
     {/* Add top padding to account for fixed header */}
@@ -25,17 +22,10 @@ const Index = () => (
             </h1>
             
             {/* Subheadline - Left aligned, 70% max width */}
-            <p className="text-lg md:text-xl text-techGray-light font-normal mb-12 max-w-[70%] leading-relaxed">
-              Helping teams build smarter, scale faster, and align around what matters—with experienced leadership from day one at a fraction of a cost.
-            </p>
+            <p className="text-lg md:text-xl text-techGray-light font-normal mb-12 max-w-[70%] leading-relaxed">Helping teams build smarter, scale faster, and align around what matters, with experienced leadership from day one at a fraction of a cost.</p>
             
             {/* CTA button */}
-            <a
-              href="https://calendar.app.google/QmDsVr3br3PohCUF7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-techBlue hover:border-neonBlue hover:bg-neonBlue hover:text-deepNavy text-white px-10 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,255,0.6)] uppercase tracking-wider inline-flex items-center gap-3 group"
-            >
+            <a href="https://calendar.app.google/QmDsVr3br3PohCUF7" target="_blank" rel="noopener noreferrer" className="border border-techBlue hover:border-neonBlue hover:bg-neonBlue hover:text-deepNavy text-white px-10 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,255,0.6)] uppercase tracking-wider inline-flex items-center gap-3 group">
               → Book a Discovery Call
               <span className="transition-transform duration-300 group-hover:translate-x-1"></span>
             </a>
@@ -131,32 +121,46 @@ const Index = () => (
             </h2>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-              {[
-                { name: "Real Defense" as ClientName, icon: Shield, hasLogo: true },
-                { name: "StyleRow" as ClientName, icon: Ruler, hasLogo: true },
-                { name: "BeClear" as ClientName, icon: Brain, hasLogo: true },
-                { name: "McCourt Global" as ClientName, icon: Building, hasLogo: true },
-                { name: "Resilia" as ClientName, icon: Rocket, hasLogo: true },
-                { name: "TigerText" as ClientName, icon: Zap, hasLogo: true },
-                { name: "AT&T Interactive" as ClientName, icon: Target, hasLogo: true },
-                { name: "Evite" as ClientName, icon: Users, hasLogo: true }
-              ].map((client, index) => {
-                const IconComponent = client.icon;
-                return (
-                  <div
-                    key={index}
-                    className="group cursor-pointer transition-all duration-300 hover:scale-110"
-                  >
+              {[{
+              name: "Real Defense" as ClientName,
+              icon: Shield,
+              hasLogo: true
+            }, {
+              name: "StyleRow" as ClientName,
+              icon: Ruler,
+              hasLogo: true
+            }, {
+              name: "BeClear" as ClientName,
+              icon: Brain,
+              hasLogo: true
+            }, {
+              name: "McCourt Global" as ClientName,
+              icon: Building,
+              hasLogo: true
+            }, {
+              name: "Resilia" as ClientName,
+              icon: Rocket,
+              hasLogo: true
+            }, {
+              name: "TigerText" as ClientName,
+              icon: Zap,
+              hasLogo: true
+            }, {
+              name: "AT&T Interactive" as ClientName,
+              icon: Target,
+              hasLogo: true
+            }, {
+              name: "Evite" as ClientName,
+              icon: Users,
+              hasLogo: true
+            }].map((client, index) => {
+              const IconComponent = client.icon;
+              return <div key={index} className="group cursor-pointer transition-all duration-300 hover:scale-110">
                     <div className="flex flex-col items-center gap-3 p-4 rounded-lg bg-white border border-gray-200 group-hover:border-techBlue-light/30 group-hover:shadow-[0_0_20px_rgba(86,204,242,0.2)] transition-all duration-300">
-                      {client.hasLogo ? (
-                        <ClientLogo name={client.name} />
-                      ) : (
-                        <IconComponent className="w-8 h-8 text-gray-600 group-hover:text-techBlue-light transition-colors duration-300" />
-                      )}
+                      {client.hasLogo ? <ClientLogo name={client.name} /> : <IconComponent className="w-8 h-8 text-gray-600 group-hover:text-techBlue-light transition-colors duration-300" />}
                     </div>
-                  </div>
-                );
-              })}
+                  </div>;
+            })}
             </div>
           </div>
         </FadeInSection>
@@ -191,31 +195,16 @@ const Index = () => (
             <div className="text-white mb-12 text-xl leading-relaxed italic">
               "If you're facing complexity, scale, or messy growth—we should talk."
             </div>
-            <a
-              href="https://calendar.app.google/QmDsVr3br3PohCUF7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-techBlue hover:border-neonBlue hover:bg-neonBlue hover:text-deepNavy text-white px-10 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,255,0.6)] uppercase tracking-wider inline-flex items-center gap-3 group mb-8"
-            >
+            <a href="https://calendar.app.google/QmDsVr3br3PohCUF7" target="_blank" rel="noopener noreferrer" className="border border-techBlue hover:border-neonBlue hover:bg-neonBlue hover:text-deepNavy text-white px-10 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,255,0.6)] uppercase tracking-wider inline-flex items-center gap-3 group mb-8">
               → Book a Discovery Call
               <span className="transition-transform duration-300 group-hover:translate-x-1"></span>
             </a>
             <div className="flex gap-6 justify-center text-sm">
-              <a
-                href="https://calendar.app.google/QmDsVr3br3PohCUF7"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-techBlue-light hover:text-neonBlue font-medium transition-all duration-300 hover:underline uppercase tracking-wide"
-              >
+              <a href="https://calendar.app.google/QmDsVr3br3PohCUF7" target="_blank" rel="noopener noreferrer" className="text-techBlue-light hover:text-neonBlue font-medium transition-all duration-300 hover:underline uppercase tracking-wide">
                 Schedule Online
               </a>
               <span className="text-techGray-light">•</span>
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-techBlue-light hover:text-neonBlue font-medium transition-all duration-300 hover:underline uppercase tracking-wide"
-              >
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-techBlue-light hover:text-neonBlue font-medium transition-all duration-300 hover:underline uppercase tracking-wide">
                 Connect on LinkedIn
               </a>
             </div>
@@ -229,7 +218,5 @@ const Index = () => (
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-techBlue-light/30 to-transparent"></div>
       © 2025 Noasa Consulting. All rights reserved.
     </footer>
-  </div>
-);
-
+  </div>;
 export default Index;
