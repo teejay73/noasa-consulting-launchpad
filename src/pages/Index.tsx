@@ -206,7 +206,7 @@ const Index = () => <div className="min-h-screen bg-gradient-to-b from-deepNavy 
               <div className="bg-cardBg rounded-xl p-8 border border-white/10 hover:border-techBlue-light/50 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-[0_10px_40px_rgba(47,128,237,0.2)] group">
                 <div className="flex items-center gap-3 mb-4">
                   <Users className="w-6 h-6 text-techBlue-light" />
-                  <h3 className="font-grotesk font-semibold text-xl text-white">Fractional CPO</h3>
+                  <h3 className="font-grotesk font-semibold text-xl text-white">Fractional Product</h3>
                 </div>
                 <p className="text-techGray-light leading-relaxed">
                   10–20 hrs/wk
