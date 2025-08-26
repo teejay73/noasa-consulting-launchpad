@@ -179,33 +179,6 @@ const Index = () => <div className="min-h-screen bg-gradient-to-b from-deepNavy 
         </FadeInSection>
       </section>
 
-      {/* GETTING STARTED SECTION */}
-      <section className="w-full py-24 px-4 bg-gradient-to-b from-deepNavy to-gradientEnd">
-        <FadeInSection delay={250}>
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-grotesk font-bold text-3xl md:text-4xl mb-4 tracking-tight text-white">
-              Getting Started
-            </h2>
-            <p className="text-techGray-light mb-16 text-lg">
-              Choose a clear, low-friction entry point
-            </p>
-            
-            <div className="flex justify-center px-4">
-              {/* 4-Week Sprint Card */}
-              <div className="bg-cardBg rounded-xl p-8 border border-white/10 hover:border-techBlue-light/50 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-[0_10px_40px_rgba(47,128,237,0.2)] group max-w-xl w-full">
-                <div className="flex items-center justify-center gap-3 mb-4">
-                  <Rocket className="w-6 h-6 text-techBlue-light flex-shrink-0" />
-                  <h3 className="font-grotesk font-semibold text-xl text-white text-center">4-Week Product Acceleration Sprint</h3>
-                </div>
-                <p className="text-techGray-light leading-relaxed text-center">
-                  Diagnose, prioritize, and deliver one measurable win
-                </p>
-              </div>
-            </div>
-          </div>
-        </FadeInSection>
-      </section>
-
       {/* CONTACT SECTION */}
       <section id="contact" className="w-full py-24 px-4 md:px-0 bg-deepNavy relative overflow-hidden">
         {/* Background gradient effect */}
