@@ -103,7 +103,7 @@ const Index = () => <div className="min-h-screen bg-gradient-to-b from-deepNavy 
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-techBlue-light mt-1 flex-shrink-0" />
-                    Strategic consulting engagements
+                    Product Lead engagements
                   </li>
                 </ul>
               </div>
