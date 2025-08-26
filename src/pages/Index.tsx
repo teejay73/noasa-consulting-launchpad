@@ -195,22 +195,24 @@ const Index = () => <div className="min-h-screen bg-gradient-to-b from-deepNavy 
             <div className="text-white mb-12 text-xl leading-relaxed italic">
               "If you're facing complexity, scale, or messy growth—we should talk."
             </div>
-            <a href="https://calendar.app.google/QmDsVr3br3PohCUF7" target="_blank" rel="noopener noreferrer" className="border border-techBlue hover:border-neonBlue hover:bg-neonBlue hover:text-deepNavy text-white px-10 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,255,0.6)] uppercase tracking-wider inline-flex items-center gap-3 group mb-4">
+            <a href="https://calendar.app.google/QmDsVr3br3PohCUF7" target="_blank" rel="noopener noreferrer" className="border border-techBlue hover:border-neonBlue hover:bg-neonBlue hover:text-deepNavy text-white px-10 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,255,0.6)] uppercase tracking-wider inline-flex items-center gap-3 group mb-8">
               → Book a Discovery Call
               <span className="transition-transform duration-300 group-hover:translate-x-1"></span>
             </a>
             
-            <a
-              href="https://www.linkedin.com/in/tj-thomsen-741253"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-neonBlue text-white px-6 py-2 font-bold text-sm transition-all duration-300 uppercase tracking-wider inline-flex items-center gap-2 group"
-              aria-label="Connect on LinkedIn"
-            >
-              <Linkedin className="w-4 h-4" />
-              LinkedIn
-              <span className="transition-transform duration-300 group-hover:translate-x-1"></span>
-            </a>
+            <div className="flex justify-center">
+              <a
+                href="https://www.linkedin.com/in/tj-thomsen-741253"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-neonBlue text-white px-6 py-2 font-bold text-sm transition-all duration-300 uppercase tracking-wider inline-flex items-center gap-2 group"
+                aria-label="Connect on LinkedIn"
+              >
+                <Linkedin className="w-4 h-4" />
+                LinkedIn
+                <span className="transition-transform duration-300 group-hover:translate-x-1"></span>
+              </a>
+            </div>
             
           </div>
         </FadeInSection>
