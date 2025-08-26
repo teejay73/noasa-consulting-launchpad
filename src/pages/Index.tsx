@@ -38,7 +38,7 @@ const Index = () => <div className="min-h-screen bg-gradient-to-b from-deepNavy 
         <FadeInSection delay={200}>
           <div className="max-w-6xl mx-auto">
             <h2 className="text-center font-grotesk font-semibold text-2xl md:text-3xl mb-16 tracking-tight text-white leading-relaxed max-w-4xl mx-auto">
-              From strategy to execution, we embed alongside teams to accelerate product, operations, and go-to-market success.
+              Driving product, operations, and go-to-market success through embedded partnership from strategy to execution.
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
