@@ -122,6 +122,10 @@ const Index = () => <div className="min-h-screen bg-gradient-to-b from-deepNavy 
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
               {[{
+              name: "McCourt Global" as ClientName,
+              icon: Building,
+              hasLogo: true
+            }, {
               name: "Real Defense" as ClientName,
               icon: Shield,
               hasLogo: true
@@ -130,19 +134,15 @@ const Index = () => <div className="min-h-screen bg-gradient-to-b from-deepNavy 
               icon: Ruler,
               hasLogo: true
             }, {
-              name: "BeClear" as ClientName,
-              icon: Brain,
-              hasLogo: true
-            }, {
-              name: "McCourt Global" as ClientName,
-              icon: Building,
-              hasLogo: true
-            }, {
               name: "Resilia" as ClientName,
               icon: Rocket,
               hasLogo: true
             }, {
-              name: "TigerText" as ClientName,
+              name: "BeClear" as ClientName,
+              icon: Brain,
+              hasLogo: true
+            }, {
+              name: "TigerConnect" as ClientName,
               icon: Zap,
               hasLogo: true
             }, {

@@ -7,6 +7,7 @@ export type ClientName =
   | "McCourt Global"
   | "Resilia"
   | "TigerText"
+  | "TigerConnect"
   | "AT&T Interactive"
   | "Evite";
 
@@ -74,10 +75,11 @@ const ClientLogo = ({ name, className = "", containerClassName = "" }: ClientLog
         );
       
       case "TigerText":
+      case "TigerConnect":
         return (
           <img 
             src="/lovable-uploads/3eb07ce8-7494-49e1-bc5e-3ef33c980f5e.png" 
-            alt="TigerText" 
+            alt={name} 
             className={`h-10 w-auto scale-[1.56] ${className}`}
           />
         );
