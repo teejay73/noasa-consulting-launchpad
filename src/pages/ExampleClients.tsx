@@ -88,7 +88,7 @@ const ExampleClients = () => {
                 />
                 <WorkCard
                   company="Resilia"
-                  subtitle="Interim Product Leadership for Series A Readiness"
+                  subtitle="Product Leadership for Series A Readiness"
                   bullets={[
                     "Engaged by Mucker Capital to lead product through a critical funding transition.",
                     "Redesigned Resilia's enterprise nonprofit platform to support scalable impact reporting for grantmakers.",
