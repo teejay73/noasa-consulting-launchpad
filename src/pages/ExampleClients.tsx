@@ -92,7 +92,7 @@ const ExampleClients = () => {
                   bullets={[
                     "Engaged by Mucker Capital to lead product through a critical funding transition.",
                     "Redesigned Resilia's enterprise nonprofit platform to support scalable impact reporting for grantmakers.",
-                    "Translated business vision into a clear, actionable roadmap and helped recruit long-term product leadership."
+                    "Translated business vision into a clear, actionable roadmap and helped recruit and onboard long-term product and technical leadership."
                   ]}
                   tileName="Resilia"
                 />
