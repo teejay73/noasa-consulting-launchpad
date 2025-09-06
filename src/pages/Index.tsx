@@ -4,6 +4,7 @@ import FadeInSection from "../components/FadeInSection";
 import CapabilitiesGrid from "../components/CapabilitiesGrid";
 import ClientLogo, { ClientName } from "../components/ClientLogo";
 import { Shield, Ruler, Brain, CheckCircle, Zap, Target, Users, Rocket, Building, Linkedin } from "lucide-react";
+import { clientLinks } from "@/data/clientLinks";
 const Index = () => <div className="min-h-screen bg-gradient-to-b from-deepNavy to-gradientEnd font-inter text-white">
     <Header />
     
@@ -138,10 +139,6 @@ const Index = () => <div className="min-h-screen bg-gradient-to-b from-deepNavy 
               icon: Rocket,
               hasLogo: true
             }, {
-              name: "BeClear" as ClientName,
-              icon: Brain,
-              hasLogo: true
-            }, {
               name: "TigerConnect" as ClientName,
               icon: Zap,
               hasLogo: true
@@ -155,11 +152,30 @@ const Index = () => <div className="min-h-screen bg-gradient-to-b from-deepNavy 
               hasLogo: true
             }].map((client, index) => {
               const IconComponent = client.icon;
-              return <div key={index} className="group cursor-pointer transition-all duration-300 hover:scale-110">
-                    <div className="flex flex-col items-center gap-3 p-4 rounded-lg bg-white border border-gray-200 group-hover:border-techBlue-light/30 group-hover:shadow-[0_0_20px_rgba(86,204,242,0.2)] transition-all duration-300">
-                      {client.hasLogo ? <ClientLogo name={client.name} /> : <IconComponent className="w-8 h-8 text-gray-600 group-hover:text-techBlue-light transition-colors duration-300" />}
-                    </div>
-                  </div>;
+              const link = clientLinks[client.name];
+              
+              const clientCard = (
+                <div className="flex flex-col items-center gap-3 p-4 rounded-lg bg-white border border-gray-200 group-hover:border-techBlue-light/30 group-hover:shadow-[0_0_20px_rgba(86,204,242,0.2)] transition-all duration-300">
+                  {client.hasLogo ? <ClientLogo name={client.name} /> : <IconComponent className="w-8 h-8 text-gray-600 group-hover:text-techBlue-light transition-colors duration-300" />}
+                </div>
+              );
+              
+              return link ? (
+                <a 
+                  key={index}
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Open ${client.name} website`}
+                  className="group cursor-pointer transition-all duration-300 hover:scale-110"
+                >
+                  {clientCard}
+                </a>
+              ) : (
+                <div key={index} className="group cursor-pointer transition-all duration-300 hover:scale-110">
+                  {clientCard}
+                </div>
+              );
             })}
             </div>
           </div>
