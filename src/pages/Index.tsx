@@ -139,6 +139,10 @@ const Index = () => <div className="min-h-screen bg-gradient-to-b from-deepNavy 
               icon: Rocket,
               hasLogo: true
             }, {
+              name: "BeClear" as ClientName,
+              icon: Brain,
+              hasLogo: true
+            }, {
               name: "TigerConnect" as ClientName,
               icon: Zap,
               hasLogo: true
